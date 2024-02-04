@@ -3,7 +3,7 @@ import React from "react"
 import {createRoot} from 'react-dom/client'
 import App from './app'
 
-const appContainer = document.getElementById("app")
+const appContainer = document.querySelector("#app")
 
  //id en html
 const root = createRoot(appContainer)
