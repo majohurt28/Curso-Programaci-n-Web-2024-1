@@ -1,7 +1,8 @@
 import React from "react"
 //importar react en cada archivo
-export function Body(){
+export function Body(props){
+    const{Color} = props
     return(
-        <main >jejejej</main>
+        <main style= {{backgroundColor: Color}}>jejejej</main>
     )
 }
