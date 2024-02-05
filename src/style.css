@@ -21,7 +21,7 @@
 
 div{
   position: absolute;
-  background-color: #646cff;
+  background-color:  #ffffff;
   margin: 0;
   width: 100%;
 height: 135px;
@@ -40,11 +40,19 @@ header{
 
 }
 
-h1 {
+header h1 {
   font-size: 18px;
   font-weight: 500;
   color: #000;
-  padding: 10px;
+  padding: 12px;
+
+}
+
+header h1:hover {
+  color: #00dc64;
+  font-weight: 550;
+
+
 }
 
 .Logo{
@@ -56,12 +64,24 @@ h1 {
 
 }
 
-.img{
-  height: 400px;
-}
+
 
 .Banner{
-  height: 400px;
+  position: absolute;
+  height: 420px;
+  z-index: 300;
+  top: 230;
+  margin-top: 40px;
+  margin-left: 300px;
+}
+
+.Background{
+  height: 500px;
+  position: absolute;
+  left: -20px;
+  top: -200;
+  z-index: 50;
+  width: 1550px;
 }
 
 body {
@@ -81,8 +101,10 @@ height: 60px;
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 160px;
+  top: 600px;
   width: 100%;
+  border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
 }
 
 footer h1{
@@ -113,7 +135,8 @@ footer h1:hover {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
+    ;
   }
   a:hover {
     color: #747bff;
