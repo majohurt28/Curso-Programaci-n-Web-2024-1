@@ -3,6 +3,8 @@ import React from "react"
 export function Body(props){
     const{Color} = props
     return(
-        <main style= {{backgroundColor: Color}}>jejejej</main>
+        <main style= {{backgroundColor: Color}}>
+
+        </main>
     )
 }
