@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import heartImg from "./images/heart.png";
 
 const Cards = [
     {
@@ -27,9 +28,9 @@ const Cardlist = () => {
     const Renderlist = () => {
         return Cards.map((value, index) => (
             <div className="cardContainer" key={value.key}>
-                <h1 style={{ color: "#000" }}>{value.name}</h1>
+                <h1 style={{ color: "#000", fontSize:"20px" }}>{value.name}</h1>
                 <p style={{ color: "#00dc64", fontWeight: "bolder" }}>{value.likes}</p>
-
+                <img src={heartImg} ></img>
 
                 <p>{value.genre}</p>
 

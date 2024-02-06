@@ -40,6 +40,7 @@ header{
 
 }
 
+
 header h1 {
   font-size: 18px;
   font-weight: 500;
@@ -56,6 +57,13 @@ header h1:hover {
 }
 
 .Logo{
+
+  width: 0px;
+
+}
+
+@media (min-width: 600px) {
+  .Logo {
   position: absolute;
   left: -12px;
   height: 107px;
@@ -63,26 +71,37 @@ header h1:hover {
   top: 2px;
 
 }
+}
 
 
 
-.Banner{
-  position: absolute;
+
+
+  .Banner {
+    position: absolute;
   height: 420px;
   z-index: 300;
   top: 230;
   margin-top: 40px;
-  margin-left: 300px;
+  margin-left: 0px;}
+
+
+
+
+  .Background {
+    width: 0px;
 }
 
-.Background{
+@media (min-width: 600px) {
+  .Background {
   height: 500px;
   position: absolute;
   left: -20px;
   top: -200;
   z-index: 50;
   width: 1550px;
-}
+} }
+
 
 body {
   margin: 0;
@@ -110,8 +129,6 @@ height: 200px;
   left: 30px;
   width: 100px;
   height: 200px;
-
-
 
 }
 

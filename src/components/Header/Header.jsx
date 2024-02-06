@@ -17,8 +17,10 @@ export function Header(props){
                     <h1> POPULAR</h1>
                     <h1> CANVAS</h1>
                 </header>
+                <img className="mobilBack" src= "https://static.wikia.nocookie.net/webtoon/images/0/04/C%C3%B3mo_domar_una_fiera_encantadora.jpg/revision/latest/smart/width/250/height/250?cb=20210926185028&path-prefix=es" />
                 <img className="Banner" src= "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi3hXTDgeKmxWAosJN6xtbvrIjXF768fnoQ4oOCjTa8Gx4JGzmo40DNRVms90Aw0JCLdcwuqAkxPbOpwRMqPNbRJgd6B1GkTsvEpWmZjMeu5FdyYQW_6tlPXGHgvDQquJs6nePiWV5ATTm/w603-h334/Webtoon%252C+American+Road+Trip+Banner+Art_Logo.png" />
                 <img className="Background" src= "https://webtoons-static.pstatic.net/image/pc/home_bg004.jpg" />
+
 
 
             </div>
