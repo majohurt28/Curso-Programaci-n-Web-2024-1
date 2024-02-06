@@ -93,11 +93,28 @@ body {
 }
 
 .cardsContainer{
-  display: flex;
-    justify-content: center;
-  position: absolute;
+
+width: 600px;
+height: 200px;
     top: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #888;
 }
+
+.cardContainer{
+  position: relative;
+  padding: 10px;
+  margin-left: 30px;
+  left: 30px;
+  width: 100px;
+  height: 200px;
+
+
+
+}
+
 
 /*Footer*/
 footer{

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const Cards = [
     {
@@ -9,14 +9,14 @@ const Cards = [
         Up: "./images/up.png",
         genre: "Romance",
         image: "https://i.pinimg.com/736x/c5/bd/60/c5bd606aa7c49fbf19184afeaefcfbef.jpg",
-    },{
+    }, {
         key: 2,
         name: "Brass & Sass",
         heart: "./images/heart.png",
-            likes: "12.1M",
-            Up: "./images/up.png",
-            genre: "Romance",
-            image: "https://pbs.twimg.com/media/Ec2Z575X0AAmK0t?format=webp&name=small",
+        likes: "12.1M",
+        Up: "./images/up.png",
+        genre: "Romance",
+        image: "https://pbs.twimg.com/media/Ec2Z575X0AAmK0t?format=webp&name=small",
 
 
     }
@@ -24,19 +24,21 @@ const Cards = [
 
 const Cardlist = () => {
 
-    const Renderlist = () =>{
+    const Renderlist = () => {
         return Cards.map((value, index) => (
-            <div className="cardContainer" key={ value.key}>
-                    <h1 style={{ color: "#000" }}>{ value.name }</h1>
-                    <p>{ value.likes}</p>
-                    <p>{ value.genre}</p>
+            <div className="cardContainer" key={value.key}>
+                <h1 style={{ color: "#000" }}>{value.name}</h1>
+                <p style={{ color: "#00dc64", fontWeight: "bolder" }}>{value.likes}</p>
 
-                </div>
+
+                <p>{value.genre}</p>
+
+            </div>
         ))
 
     }
 
-    return(
+    return (
         <div className="cardsContainer">
             {Renderlist()}
         </div>
