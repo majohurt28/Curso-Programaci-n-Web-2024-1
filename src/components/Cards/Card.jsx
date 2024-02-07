@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import heartImg from "./images/heart.png";
+import up from "./images/up.png";
+import beuty from "./images/belleza.webp";
+import freakingRomance from "./images/Maldito.webp";
+import fall from "./images/Caida.webp";
+
 
 const Cards = [
     {
@@ -9,7 +14,7 @@ const Cards = [
         likes: "22.3M",
         Up: "./images/up.png",
         genre: "Romance",
-        image: "https://i.pinimg.com/736x/c5/bd/60/c5bd606aa7c49fbf19184afeaefcfbef.jpg",
+        image: "./images/Maldito.webp",
     }, {
         key: 2,
         name: "Brass & Sass",
@@ -18,21 +23,49 @@ const Cards = [
         Up: "./images/up.png",
         genre: "Romance",
         image: "https://pbs.twimg.com/media/Ec2Z575X0AAmK0t?format=webp&name=small",
-
-
-    }
+    },{
+    key: 3,
+    name: "Brass & Sass",
+    heart: "./images/heart.png",
+    likes: "12.1M",
+    Up: "./images/up.png",
+    genre: "Romance",
+    image: "https://pbs.twimg.com/media/Ec2Z575X0AAmK0t?format=webp&name=small",
+    },
+    {
+        key: 4,
+        name: "Brass & Sass",
+        heart: "./images/heart.png",
+        likes: "12.1M",
+        Up: "./images/up.png",
+        genre: "Romance",
+        image: "https://pbs.twimg.com/media/Ec2Z575X0AAmK0t?format=webp&name=small",
+        },
+        {
+            key: 5,
+            name: "Brass & Sass",
+            heart: "./images/heart.png",
+            likes: "12.1M",
+            Up: "./images/up.png",
+            genre: "Romance",
+            image: "https://pbs.twimg.com/media/Ec2Z575X0AAmK0t?format=webp&name=small",
+            },
 ]
 
 const Cardlist = () => {
 
     const Renderlist = () => {
         return Cards.map((value, index) => (
-            <div className="cardContainer" key={value.key}>
-                <h1 style={{ color: "#000", fontSize:"20px" }}>{value.name}</h1>
-                <p style={{ color: "#00dc64", fontWeight: "bolder" }}>{value.likes}</p>
-                <img src={heartImg} ></img>
+            <div style={{ width: "190px", height:"190px", marginLeft: "15px" }} className="cardContainer" key={value.key}>
+                 <h1 style={{ color: "#000", fontSize:"20px", color: "#000" }}>{value.name}</h1>
+                <img style={{ width: "40px", height:"40px" }} src={up}></img>
 
-                <p>{value.genre}</p>
+                <p style={{ height: "17px", width: "20px",  alignItems: "flex-start",display: "flex"}}>
+                    <img style={{ width: "15px", height:"15px" }} src={heartImg} ></img>
+                    <p style={{ color: "#00dc64", fontWeight: "bolder", marginLeft: "4px", marginTop: "-3px", marginBottom: "2px" }}>{value.likes}</p>
+                </p>
+
+                <p style={{ color: "#c00355", fontSize:"17px" }} >{value.genre}</p>
 
             </div>
         ))
@@ -40,8 +73,9 @@ const Cardlist = () => {
     }
 
     return (
-        <div className="cardsContainer">
+        <div style={{ width: "1200px", height:"450px", background:"#f4f4f4", position:"absolute", left: "10%"}} className="cardsContainer">
             {Renderlist()}
+            <h1 style={{ color: "#000", fontSize:"24px", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif" }}>My Series </h1>
         </div>
     )
 }

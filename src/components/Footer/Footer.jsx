@@ -3,7 +3,7 @@ import React from "react"
 
 export function Footer(){
     return(
-    <footer >
+    <footer style={{ color: "#000", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif" }}>
 
             <h1> MON</h1>
                 <h1> TUE</h1>
@@ -12,7 +12,11 @@ export function Footer(){
                 <h1> FRI</h1>
                 <h1> SAT</h1>
                 <h1> SUN</h1>
+                <a style={{ color: "#000", marginTop: "22px", fontSize: "19px", color: "#838383", height: "60px",
+    width: "120px", fontweight: "700" }}>
+                    MORE</a>
 
     </footer>
     )
 }
+

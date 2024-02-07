@@ -31,12 +31,13 @@ height: 135px;
 }
 
 header{
-  position: relative;
-  left: 20px;
+
+
   padding: 24px 0 0 1px;
   align-items: flex-start;
   display: flex;
   justify-content: center;
+
 
 }
 
@@ -83,7 +84,7 @@ header h1:hover {
   z-index: 300;
   top: 230;
   margin-top: 40px;
-  margin-left: 0px;}
+  margin-left: 15px;}
 
 
 
@@ -99,7 +100,7 @@ header h1:hover {
   left: -20px;
   top: -200;
   z-index: 50;
-  width: 1550px;
+  width: 1540px;
 } }
 
 
@@ -125,7 +126,7 @@ height: 200px;
 .cardContainer{
   position: relative;
   padding: 10px;
-  margin-left: 30px;
+
   left: 30px;
   width: 100px;
   height: 200px;
@@ -149,7 +150,7 @@ height: 60px;
 }
 
 footer h1{
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 700px;
     height: 60px;
     width: 120px;
