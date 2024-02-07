@@ -3,6 +3,7 @@ import { Header } from "./components/Header/Header";
 import { Body } from "./components/Body/Body";
 import { Footer } from "./components/Footer/Footer";
 import  Cardlist  from "./components/Cards/Card";
+/* import  Cardsnew from "./components/Newwebtoon/Newwebtoon"; */
 
 /* import  { Cards } from "./components/Cards/Cards"; */
 
@@ -14,6 +15,7 @@ export default function App() {
             <Header  color= '#000' />
             <Body />
             <Cardlist />
+           {/*  <Cardsnew/> */}
             <Footer />
         </div>
 

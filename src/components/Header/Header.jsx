@@ -14,7 +14,7 @@ export function Header(props){
 
                 <header style={{width: "300px", marginLeft: "30px"}}>
                 <img style={{ marginLeft: "14px",top: "10px", width:"90px", height: "90px"}} className="Logo" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Naver_Line_Webtoon_logo.png"/>
-                <div></div>
+
                 <h1> ORIGINALS</h1>
                     <h1> GENRES</h1>
                     <h1> POPULAR</h1>

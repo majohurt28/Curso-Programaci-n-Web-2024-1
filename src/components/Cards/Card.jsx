@@ -14,7 +14,7 @@ const Cards = [
         likes: "22.3M",
         Up: "./images/up.png",
         genre: "Romance",
-        image: "./images/Maldito.webp",
+        image: "https://static.wikia.nocookie.net/webtoon/images/5/55/Maldito_romance.jpg/revision/latest?cb=20210909133539&path-prefix=es",
     }, {
         key: 2,
         name: "Brass & Sass",
@@ -50,15 +50,59 @@ const Cards = [
             genre: "Romance",
             image: "https://pbs.twimg.com/media/Ec2Z575X0AAmK0t?format=webp&name=small",
             },
+            {
+                key: 6,
+                name: "Freaking Romance",
+                heart: "./images/heart.png",
+                likes: "22.3M",
+                Up: "./images/up.png",
+                genre: "Romance",
+                image: "https://static.wikia.nocookie.net/webtoon/images/5/55/Maldito_romance.jpg/revision/latest?cb=20210909133539&path-prefix=es",
+            }, {
+                key: 7,
+                name: "Brass & Sass",
+                heart: "./images/heart.png",
+                likes: "12.1M",
+                Up: "./images/up.png",
+                genre: "Romance",
+                image: "https://pbs.twimg.com/media/Ec2Z575X0AAmK0t?format=webp&name=small",
+            },{
+            key: 8,
+            name: "Brass & Sass",
+            heart: "./images/heart.png",
+            likes: "12.1M",
+            Up: "./images/up.png",
+            genre: "Romance",
+            image: "https://pbs.twimg.com/media/Ec2Z575X0AAmK0t?format=webp&name=small",
+            },
+            {
+                key: 9,
+                name: "Brass & Sass",
+                heart: "./images/heart.png",
+                likes: "12.1M",
+                Up: "./images/up.png",
+                genre: "Romance",
+                image: "https://pbs.twimg.com/media/Ec2Z575X0AAmK0t?format=webp&name=small",
+                },
+                {
+                    key: 10,
+                    name: "Brass & Sass",
+                    heart: "./images/heart.png",
+                    likes: "12.1M",
+                    Up: "./images/up.png",
+                    genre: "Romance",
+                    image: "https://pbs.twimg.com/media/Ec2Z575X0AAmK0t?format=webp&name=small",
+                    },
 ]
 
 const Cardlist = () => {
 
     const Renderlist = () => {
         return Cards.map((value, index) => (
-            <div style={{ width: "190px", height:"190px", marginLeft: "15px" }} className="cardContainer" key={value.key}>
+            <div style={{ width: "190px", height:"190px", marginLeft: "15px", marginBottom: "15px" }} className="cardContainer" key={value.key}>
                  <h1 style={{ color: "#000", fontSize:"20px", color: "#000" }}>{value.name}</h1>
-                <img style={{ width: "40px", height:"40px" }} src={up}></img>
+                 <img style={{ width: "40px", height:"40px" }} src={up}></img>
+                 <img src={value.image}></img>
 
                 <p style={{ height: "17px", width: "20px",  alignItems: "flex-start",display: "flex"}}>
                     <img style={{ width: "15px", height:"15px" }} src={heartImg} ></img>
@@ -73,7 +117,8 @@ const Cardlist = () => {
     }
 
     return (
-        <div style={{ width: "1200px", height:"450px", background:"#f4f4f4", position:"absolute", left: "10%"}} className="cardsContainer">
+        <div style={{ width: "1200px", height:"450px", background:"#f4f4f4", position:"absolute", left: "10%", marginLeft: "20px", }}
+        className="cardsContainer">
             {Renderlist()}
             <h1 style={{ color: "#000", fontSize:"24px", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif" }}>My Series </h1>
         </div>
