@@ -3,11 +3,13 @@ import React from "react"
 
 export function Footer(){
     return(
-    <footer style={{ color: "#000", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif" }}>
+    <footer style={{ color: "#000", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif", textAlign: "center"}}>
 
             <h1> MON</h1>
                 <h1> TUE</h1>
-                <h1> WED</h1>
+                <h1 style={{ backgroundColor: "#00dc64", color:"#ffffff", borderBottomColor: "black", paddingBottom: "-2px",
+                marginTop: "0px", marginBottom: "0px",  width: "120px"}}>
+                WED</h1>
                 <h1> THU</h1>
                 <h1> FRI</h1>
                 <h1> SAT</h1>

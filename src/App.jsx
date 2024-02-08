@@ -11,7 +11,9 @@ export default function App() {
     return (
         //cuando hay más de una etqueta es mejor colocarlas en un contenedor
         // fragment es una etiqueta vacia <> </>
-        <div>
+        <div style={{
+
+        }}>
             <Header  color= '#000' />
             <Body />
             <Cardlist />
