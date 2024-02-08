@@ -33,7 +33,8 @@ export function Header(props) {
                                 color: "#fff",
                                 fontSize: "14px",
                                 fontWeight: "500",
-                                height: "33px", width: "104px"}}>
+                                height: "33px", width: "104px",
+                                marginLeft: "9px"}}>
                 Publish</button>
 
                 <button style={{backgroundColor: "#ffffff",

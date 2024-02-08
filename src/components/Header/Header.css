@@ -7,12 +7,15 @@ li{
     height: 90px;
 }
 
-div h1{
+.buttonContainer h1{
     font-size: 20px;
+    font-weight: bolder;
     margin-right: 5px;
     margin-top: 20px;
     margin-bottom: 0px;
     height: 50px;
+    color: rgb(0, 220, 100);
+    margin-top: 25px;
 }
 
 button{
