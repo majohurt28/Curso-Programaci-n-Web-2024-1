@@ -1,0 +1,21 @@
+.Banner {
+    height: 420px;
+    z-index: 300;
+    top: 230;
+    margin-top: 40px;
+    margin-left: 42px;}
+
+
+    .Background {
+      width: 0px;
+  }
+
+  @media (min-width: 600px) {
+    .Background {
+    height: 500px;
+    left: -20px;
+    margin-top: -470px;
+    top: -200;
+    z-index: 50;
+    width: 1537px;
+  } }

@@ -13,11 +13,12 @@ export function Header(props) {
             fontFamily:"hind,simhei,verdana,Helvetica,sans-serif",
             width: "100%",
 
+
         }}>
-        <div style= {{display: "flex", flexDirection: "row", marginLeft: "-200px", width: "630px", fontSize: "20px", fontWeight: "700"}}>
+        <div style= {{display: "flex", flexDirection: "row", marginLeft: "-100px", width: "630px", fontSize: "20px", fontWeight: "700"}}>
             <img  style={{ width: "100px", height: "97"}} className="Logo" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Naver_Line_Webtoon_logo.png" />
             <nav >
-                <ul style= {{display: "flex", flexDirection: "row", fontSize: "22px", marginLeft: "10px", }}>
+                <ul style= {{display: "flex", flexDirection: "row", fontSize: "20px", marginLeft: "10px", paddingLeft: "20px", marginTop: "40px" }}>
                 <li> ORIGINALS</li>
                 <li> GENRES</li>
                 <li> POPULAR</li>
@@ -26,8 +27,9 @@ export function Header(props) {
             </nav>
         </div>
 
-        <div className="buttonContainer" style= {{display: "flex", flexDirection: "row",}}>
+        <div className="buttonContainer" style= {{display: "flex", flexDirection: "row", marginTop: "16px"}}>
                 <h1>WEBTOON SHOP</h1>
+                <h2>Creators 101</h2>
                 <button style={{background: "#2f2f2f",
                                 borderRadius: "17px",
                                 color: "#fff",

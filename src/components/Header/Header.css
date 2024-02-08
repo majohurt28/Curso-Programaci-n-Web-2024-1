@@ -5,6 +5,7 @@ li{
 
 .buttonContainer{
     height: 90px;
+    margin-left: 90px;
 }
 
 .buttonContainer h1{
@@ -15,6 +16,17 @@ li{
     margin-bottom: 0px;
     height: 50px;
     color: rgb(0, 220, 100);
+    margin-top: 25px;
+}
+
+.buttonContainer h2{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 50px;
     margin-top: 25px;
 }
 
