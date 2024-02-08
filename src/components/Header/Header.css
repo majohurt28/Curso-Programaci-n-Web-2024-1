@@ -54,3 +54,8 @@ button{
     z-index: 50;
     width: 1540px;
   } }
+
+  .bookIcon{
+    width: 22px;
+    height: 19px;
+  }

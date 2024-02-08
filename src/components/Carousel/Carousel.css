@@ -1,6 +1,6 @@
 .Banner {
     height: 420px;
-    z-index: 300;
+    z-index: 50;
     top: 230;
     margin-top: 40px;
     margin-left: 42px;}
@@ -16,6 +16,6 @@
     left: -20px;
     margin-top: -470px;
     top: -200;
-    z-index: 50;
-    width: 1537px;
+    z-index: 45;
+    width: 1503px;
   } }

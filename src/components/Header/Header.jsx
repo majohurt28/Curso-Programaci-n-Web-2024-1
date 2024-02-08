@@ -1,5 +1,6 @@
 import React from "react"
 import "./Header.css"
+import book from "./libro.png"
 
 export function Header(props) {
     const { content, color } = props
@@ -29,7 +30,7 @@ export function Header(props) {
 
         <div className="buttonContainer" style= {{display: "flex", flexDirection: "row", marginTop: "16px"}}>
                 <h1>WEBTOON SHOP</h1>
-                <h2>Creators 101</h2>
+                <h2><img className="bookIcon" src={book}></img>Creators 101</h2>
                 <button style={{background: "#2f2f2f",
                                 borderRadius: "17px",
                                 color: "#fff",
