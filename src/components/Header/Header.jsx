@@ -1,6 +1,7 @@
 import React from "react"
 import "./Header.css"
 import book from "./libro.png"
+import len from "./lens.png"
 
 export function Header(props) {
     const { content, color } = props
@@ -37,7 +38,7 @@ export function Header(props) {
                                 fontSize: "14px",
                                 fontWeight: "500",
                                 height: "33px", width: "104px",
-                                marginLeft: "9px"}}>
+                                marginLeft: "13px"}}>
                 Publish</button>
 
                 <button style={{backgroundColor: "#ffffff",
@@ -51,6 +52,9 @@ export function Header(props) {
                                 marginLeft: "7px"}}>
                 majo osorio</button>
             </div>
+            {/* <div className="len-container">
+                <img style={{width: "40px", height: "40px"}} src={len}></img>
+            </div> */}
 
            {/*  <div>
             <img className="Banner" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi3hXTDgeKmxWAosJN6xtbvrIjXF768fnoQ4oOCjTa8Gx4JGzmo40DNRVms90Aw0JCLdcwuqAkxPbOpwRMqPNbRJgd6B1GkTsvEpWmZjMeu5FdyYQW_6tlPXGHgvDQquJs6nePiWV5ATTm/w603-h334/Webtoon%252C+American+Road+Trip+Banner+Art_Logo.png" />

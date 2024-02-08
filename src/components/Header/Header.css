@@ -11,7 +11,7 @@ li{
 .buttonContainer h1{
     font-size: 20px;
     font-weight: bolder;
-    margin-right: 5px;
+    margin-right: 12px;
     margin-top: 20px;
     margin-bottom: 0px;
     height: 50px;
@@ -27,7 +27,7 @@ li{
     margin-top: 20px;
     margin-bottom: 0px;
     height: 50px;
-    margin-top: 25px;
+    margin-top: 22px;
 }
 
 button{
@@ -58,4 +58,17 @@ button{
   .bookIcon{
     width: 22px;
     height: 19px;
+    margin-right: 7px;
+    padding-top: 3px;
+  }
+
+
+  .len-container{
+    border-radius: 50%;
+    width: 50px;
+    height:  50px;
+    border-color: black;
+    border-width: medium;
+    margin-top: 30px;
+
   }
