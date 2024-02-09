@@ -4,6 +4,7 @@ import { Body } from "./components/Body/Body";
 import { Footer } from "./components/Footer/Footer";
 import  Cardlist  from "./components/Cards/Card";
 import  {Carousel} from "./components/Carousel/Carousel";
+import NewwebtoonList from "./components/Newwebtoon/Newwebtoon"
 
 /* import  Cardsnew from "./components/Newwebtoon/Newwebtoon"; */
 
@@ -20,8 +21,10 @@ export default function App() {
             <Carousel/>
             <Body />
             <Cardlist />
-           {/*  <Cardsnew/> */}
+
+
             <Footer />
+            <NewwebtoonList/>
         </div>
 
     )

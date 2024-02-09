@@ -1,6 +1,8 @@
+
 li{
     list-style: none;
     margin-left: 13px;
+
 }
 
 .buttonContainer{
@@ -11,7 +13,7 @@ li{
 .buttonContainer h1{
     font-size: 20px;
     font-weight: bolder;
-    margin-right: 12px;
+    margin-right: 10px;
     margin-top: 20px;
     margin-bottom: 0px;
     height: 50px;
@@ -71,4 +73,12 @@ button{
     border-width: medium;
     margin-top: 30px;
 
+  }
+
+  .Logo{
+
+    margin-left: -10px;
+    height: 100px;
+    width: 97px;
+    top: 2px;
   }

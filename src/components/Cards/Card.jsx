@@ -112,14 +112,14 @@ const Renderlist = () => {
             </p>
 
             <p style={{ color: "#c00355", fontSize:"16px", zIndex: "40", marginTop: "-6px"}} >{value.genre}</p>
-            </div>
+        </div>
         ))
 
     }
 
     return (
         <div style={{ width: "1200px", height:"500px", background:"#f4f4f4", position:"absolute", left: "10%", marginLeft: "20px",
-    /* marginTop: "60px" */ }}
+     }}
 
         className="cardsContainer">
          {/* <h1 style={{ color: "#000", fontSize:"24px", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif", height: "40px", marginTop: "-300px" }}>My Series </h1> */}

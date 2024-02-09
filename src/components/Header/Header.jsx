@@ -14,13 +14,14 @@ export function Header(props) {
             backgroundColor: "#ffffff",
             fontFamily:"hind,simhei,verdana,Helvetica,sans-serif",
             width: "100%",
+            height: "99px",
 
 
         }}>
         <div style= {{display: "flex", flexDirection: "row", marginLeft: "-100px", width: "630px", fontSize: "20px", fontWeight: "700"}}>
             <img  style={{ width: "100px", height: "97"}} className="Logo" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Naver_Line_Webtoon_logo.png" />
             <nav >
-                <ul style= {{display: "flex", flexDirection: "row", fontSize: "20px", marginLeft: "10px", paddingLeft: "20px", marginTop: "40px" }}>
+                <ul style= {{display: "flex", flexDirection: "row", fontSize: "20px", marginLeft: "10px", paddingLeft: "20px", marginTop: "40px",  }}>
                 <li> ORIGINALS</li>
                 <li> GENRES</li>
                 <li> POPULAR</li>
