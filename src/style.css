@@ -33,6 +33,7 @@ height: 200px;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #888;
+    padding-bottom: 25px;
 }
 
 .cardContainer{
