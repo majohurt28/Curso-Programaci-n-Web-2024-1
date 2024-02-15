@@ -5,17 +5,35 @@
     margin-top: 40px;
     margin-left: 22%;}
 
+    @media (max-width: 762px) {
+      .Banner {
+        display: none;
+    } }
+
+    .carouselContainer{
+      height: 500px;
+    width: 1503px;
+    height: 500px;
+    background-image: url("https://webtoons-static.pstatic.net/image/pc/home_bg004.jpg");
+    }
+
 
     .Background {
-      width: 0px;
+      height: 500px;
+      left: -20px;
+      margin-top: -470px;
+      top: -200;
+      z-index: 45;
+      width: 1503px;
   }
 
-  @media (min-width: 600px) {
+  @media (max-width: 762px) {
     .Background {
-    height: 500px;
-    left: -20px;
-    margin-top: -470px;
-    top: -200;
-    z-index: 45;
-    width: 1503px;
+      display: none;
+
   } }
+
+  .Background-mobile{
+    display: none;
+
+  }
