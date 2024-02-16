@@ -77,11 +77,11 @@ footer h1:hover {
 
 }
 
-
 #app {
   width: 100%;
   margin: 0 auto;
 }
+
 
 
 .read-the-docs {
@@ -89,16 +89,10 @@ footer h1:hover {
 }
 
 
-@media (prefers-color-scheme: light) {
+@media (max-width: 762px) { /*! aqui solo movil */
   :root {
     color: #213547;
-    background-color: #f4f4f4;
-    ;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+    background-color: white;
   }
 }
+

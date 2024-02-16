@@ -10,12 +10,25 @@
         display: none;
     } }
 
-    .carouselContainer{
+
+
+    .carousel-container{
       height: 500px;
     width: 1503px;
     height: 500px;
     background-image: url("https://webtoons-static.pstatic.net/image/pc/home_bg004.jpg");
     }
+
+    @media (max-width: 762px) {
+      .carousel-container{
+        top: 0px;
+        background-image: url("https://assetsio.reedpopcdn.com/Everdate.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp");
+        height: 340px;
+        width: 100%;
+      } }
+
+
+
 
 
     .Background {
@@ -33,7 +46,8 @@
 
   } }
 
-  .Background-mobile{
-    display: none;
 
-  }
+
+
+  /** Mobile image*/
+

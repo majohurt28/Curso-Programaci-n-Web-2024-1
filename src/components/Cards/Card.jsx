@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Card.css'
 import heartImg from "./images/heart.png";
 import up from "./images/up.png";
 
@@ -96,7 +97,7 @@ const Cardlist = () => {
 /**Card cointainer: Name, Up image, Background, Heart icon, "like", genre */
 const Renderlist = () => {
     return Cards.map((value, index) => (
-        <div style={{ width: "192px", paddingBottom: "25px", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif",  height:"205px", marginLeft: "15px", marginBottom: "15px", display: "flex", flexDirection: "column", backgroundColor: "#ffffff"  }} className="cardContainer" key={value.key}>
+        <div style={{ }} className="card-container" key={value.key}>
 
             <h1 style={{ color: "#000", fontSize:"19px", color: "#000", marginTop:"0px" }}>{value.name}</h1>
             <img style={{ width: "45px", height:"45px", zIndex: "20", marginBottom: "2px", marginTop: "-5px"}} src={up}></img>

@@ -24,20 +24,12 @@ export function Header(props) {
         <div className="buttonContainer">
                 <h1>WEBTOON SHOP</h1>
                 <h2><img className="bookIcon" src={book}></img>Creators 101</h2>
-                <button className="Publish-button" style={{}}>
+                <button className="publish-button" >
                 Publish</button>
 
-                <button className="User-button" style={{backgroundColor: "#ffffff",
-                                borderRadius: "17px",
-                                color: "#7f7f7f",
-                                fontSize: "13px",
-                                fontWeight: "500",
-                                borderColor: "#b4b4b4",
-                                lineHeight: "31px",
-                                height: "33px", width: "104px",
-                                marginLeft: "7px"}}>
+                <button className="user-button" >
                 majo osorio</button>
-                <button className="len-button"><img  style={{}} className="len"src={len}></img></button>
+                <button className="len-button"><img  style={{}} className="len-icon"src={len}></img></button>
             </div>
             {/* <div className="len-container">
                 <img style={{width: "40px", height: "40px"}} src={len}></img>

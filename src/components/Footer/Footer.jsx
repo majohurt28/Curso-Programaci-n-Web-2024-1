@@ -3,7 +3,7 @@ import React from "react"
 
 export function Footer(){
     return(
-    <footer style={{ color: "#000", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif", textAlign: "center"}}>
+    <footer style={{ }}>
 
             <h1> MON</h1>
                 <h1> TUE</h1>

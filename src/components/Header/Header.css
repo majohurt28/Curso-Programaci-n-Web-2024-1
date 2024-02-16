@@ -8,15 +8,6 @@ flex-direction: row;
   height: 99px;
 }
 
-
-@media (max-width: 762px) {
-  header {
-    background-color: blue;
-  }
-}
-
-/*! */
-
 /** Options container */
 
 .options{
@@ -27,14 +18,6 @@ flex-direction: row;
   font-size: 20px;
   font-weight: 700;
 }
-
-@media (max-width: 762px) {
-  .options {
-    display: none;
-  }
-  }
-
-
 
 li{
     list-style: none;
@@ -62,13 +45,6 @@ li{
     margin-top: 25px;
 }
 
-@media (max-width: 762px) {
-  .buttonContainer h1 {
-    display: none;
-  }
-  }
-
-
 
 .buttonContainer h2{
     font-size: 18px;
@@ -81,17 +57,12 @@ li{
     margin-top: 22px;
 }
 
-@media (max-width: 762px) {
-  .buttonContainer h2 {
-    display: none;
-  }}
-
 
 button{
     margin-top: 20px;
 }
 
-.Publish-button{
+.publish-button{
   background: #2f2f2f;
   border-radius: 17px;
   color: #fff;
@@ -102,10 +73,19 @@ button{
   margin-left: 13px;
 }
 
-@media (max-width: 762px) {
-  .Publish-button{
-    display: none;
-  }}
+
+.user-button{
+  background-color: #ffffff;
+ border-radius: 17px;
+  color: #7f7f7f;
+  font-size: 13px;
+  font-weight: 500;
+  border-color: #b4b4b4;
+  line-height: 31px;
+  height: 33px;
+  width: 104px;
+  margin-left: 7px;
+}
 
 
 .Banner {
@@ -134,18 +114,10 @@ button{
     height: 19px;
     margin-right: 7px;
     padding-top: 3px;
-  }
-
-
-  .len-container{
-    border-radius: 50%;
-    width: 50px;
-    height:  50px;
-    border-color: black;
-    border-width: medium;
-    margin-top: 30px;
 
   }
+
+  /** Len Icon and burguer menu */
 
   .len-button{
     background-color: #ffffff96;
@@ -154,9 +126,9 @@ button{
     height: 36px;
     width: 36px;
     margin-left: 10px;
-
   }
-  .len{
+
+  .len-icon{
     margin-left: -6px;
     margin-top: -1px;
     width: 34px;
@@ -170,3 +142,45 @@ button{
     width: 97px;
     top: 2px;
   }
+
+
+/** Mobile Design*/
+
+@media (max-width: 762px) {
+  header {
+    background-color: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 762px) {
+  .options {
+    display: none;
+  }
+  }
+
+
+@media (max-width: 762px) {
+  .publish-button{
+    display: none;
+  }
+  .user-button{
+    display: none;
+  }
+}
+
+@media (max-width: 762px) {
+  .buttonContainer h2 {
+    display: none;
+  }
+
+  .buttonContainer h1 {
+    display: none;
+  }}
+
+  @media (max-width: 600px) {
+    .len-button {
+      background-color: #e9e4e4;
+      border: 1.5px solid #e9e4e4;
+      margin-left: 340%;
+}}
