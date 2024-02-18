@@ -117,7 +117,7 @@ const Renderlist = () => {
     return (
         <div className="cards-container">
          {/* <h1 style={{ color: "#000", fontSize:"24px", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif", height: "40px", marginTop: "-300px" }}>My Series </h1> */}
-         <h1 className="my-serie"> My Series </h1>
+         <h1 className="my-series"> My Series </h1>
             {Renderlist()}
 
 

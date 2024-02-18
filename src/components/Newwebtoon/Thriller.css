@@ -1,0 +1,64 @@
+.thriller-info{
+    width: 212px;
+    font-family: hind,simhei,verdana,Helvetica,sans-serif;
+    height: 225px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #c00355;
+}
+
+.cards-container3{
+    width: 1200px;
+    height: 250px;
+    display: flex;
+    background: #f4f4f4;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: #f4f4f4;
+    margin-top: 282px;
+    position: absolute;
+    left: 10%;
+    margin-left: 20px;
+    margin-top: 890px;
+}
+
+
+.cardContainer3{
+    padding: 10px;
+
+      left: 30px;
+      width: 100px;
+      height: 200px;
+      border-bottom: 1px solid #eaeaea;
+
+}
+
+.info-genre{
+    color: #fff;
+    bottom: 15px;
+    height: 169px;
+left: 21px;
+top: 21px;
+width: 172px;
+margin: 20px;
+
+}
+
+.info-genre strong{
+font-size: 22px;
+font-weight: 500;
+line-height: 25px;
+}
+
+.info-genre p{
+font-size: 16px;
+margin-top: 110px;
+font-weight: 500;
+line-height: 20px;
+}
+
+.info-genre em{
+margin-left: 95px;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import  "./Newwebtoon.css"
+
 import heartImg from "./images/heart.png";
 import up from "./images/up.png";
 

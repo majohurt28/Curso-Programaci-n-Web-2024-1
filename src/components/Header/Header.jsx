@@ -6,8 +6,7 @@ import len from "./lens.png"
 export function Header(props) {
     const { content, color } = props
     return (
-        <header style={{
-        }}>
+        <header>
 
         <div className="options" style= {{}}>
             <img  style={{ width: "100px", height: "97"}} className="Logo" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Naver_Line_Webtoon_logo.png" />

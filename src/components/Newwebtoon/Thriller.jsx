@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import  "./Newwebtoon.css"
+import  "./Thriller.css"
 import heartImg from "./images/heart.png";
 import up from "./images/up.png";
 
@@ -77,18 +77,11 @@ const Webtoonthriller = [
 
 
         return (
-            <div style={{ width: "1200px", height:"250px",
-                        background:"#f4f4f4", position:"absolute",
-                        left: "10%", marginLeft: "20px", marginTop: "890px",
-                         }} className="cardsContainer3">
+            <div style={{ }} className="cards-container3">
 
-                    <div className="Horror" style={{
-                        width: "212px", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif",
-                        height:"225px", marginLeft: "15px",
-                        marginBottom: "15px", display: "flex",
-                        flexDirection: "column", backgroundColor: "#c00355" }} >
+                    <div className="thriller-info" style={{ }} >
                             <div className="info-genre">
-                                <strong>Thriller<em className="em-info" style={{marginLeft: "91px"}}> | </em></strong>
+                                <strong>Thriller<em className="em-info" style={{}}> | </em></strong>
                                 <p>Chill, Shiver and Shudder</p>
                             </div>
              </div>
