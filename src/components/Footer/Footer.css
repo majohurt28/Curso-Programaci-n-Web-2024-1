@@ -5,23 +5,17 @@ footer{
 }
 
 
-@media (max-width: 762px) {
-    footer{
-      display: none;
-    } }
-
-    footer{
-
+footer{
 height: 60px;
   background-color: rgb(255, 255, 255);
   align-items: flex-start;
   display: flex;
   justify-content: center;
   top: 600px;
-  width: 100%;
+  width: 105%;
   border-bottom: 1px solid #eaeaea;
-
 }
+
 
 footer h1{
   font-size: 21px;
@@ -38,3 +32,10 @@ footer h1:hover {
   font-weight: 550;
 
 }
+
+
+/**Mobile responsive design**/
+@media (max-width: 762px) {
+  footer{
+    display: none;
+  } }

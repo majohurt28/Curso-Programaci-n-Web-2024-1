@@ -21,10 +21,12 @@
 
     @media (max-width: 762px) {
       .carousel-container{
-        top: 0px;
+        margin-top: -98px;
         background-image: url("https://assetsio.reedpopcdn.com/Everdate.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp");
-        height: 340px;
-        width: 100%;
+        height: 360px;
+        width: 105%;
+        margin-left: -8px;
+        margin-right: -15px;
       } }
 
 

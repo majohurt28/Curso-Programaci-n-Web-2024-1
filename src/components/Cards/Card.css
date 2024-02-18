@@ -1,49 +1,212 @@
-.cardsContainer{
-    width: 600px;
-    height: 200px;
-        top: 700px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: #888;
-        padding-bottom: 25px;
-    }
+.cards-container{
+    width: 1200px;
+    height: 500px;
+    top: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #888;
+    background: #f4f4f4;
+    padding-bottom: 25px;
+    position: absolute;
+    left: 10%;
+    margin-left: 20px;
+}
+
+
+.card-container{
+    padding: 10px;
+    left: 30px;
+    width: 192px;
+    height: 205px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    font-family: hind,simhei,verdana,Helvetica,sans-serif;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff ;
+}
+
+
+.card-container h1{
+    color: #000;
+    font-size: 19px;
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+.up-icon{
+    width: 45px;
+    height:45px;
+    z-index: 20;
+    margin-bottom: 2px;
+    margin-top: -5px;
+}
+
+.heart-icon{
+    width: 15px;
+    height: 15px;
+    z-index: 30;
+    background-color: #ffffff;
+    padding-left: -5px;
+    padding-bottom: 32px;
+    padding-top: 6px;
+    margin-top: 2px;
+}
+
+.comic-image{
+    width: 190px;
+    height: 177px;
+     z-index: 10;
+     margin-top: -45px;
+}
+
+.like-container{
+    height: 17px;
+    width: 20px  ;
+    align-items: flex-start;
+    display: flex;
+    background-color: #ffffff;
+    margin-top: -50px;
+    background-color: #ffffff;
+}
+
+.like-container p{
+    color: #00dc64 ;
+    font-weight: bolder;
+    margin-left: 0px;
+    margin-top: -3px;
+    margin-top: 2px;
+    background-color: #ffffff;
+    z-index: 35;
+    padding-right: 138px ;
+    padding-left: 10px;
+    padding-bottom: 26px;
+    padding-top: 3px;
+}
+
+.genre-info{
+    color: #c00355;
+    font-size: 16px ;
+    z-index: 40;
+    margin-top: -6px;
+}
+
+.my-genre{
+    display: none;
+}
+
+
+/**Mobile responsive Design**/
+
+@media (max-width: 762px) {
+
+.cards-container{
+    width: 340%;
+    height: 190px;
+    top: 385px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    background: #ffffff;
+    padding-bottom: 25px;
+    position: absolute;
+    left: 0%;
+    margin-left: 20px;
+    overflow-x: auto;
+}
+
 
     .card-container{
-      padding: 10px;
-      left: 30px;
-      width: 192px;
-      height: 205px;
-      border-bottom: 1px solid #eaeaea;
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 25px;
-      font-family: hind,simhei,verdana,Helvetica,sans-serif;
-      margin-left: 15px;
-      margin-bottom: 15px;
-      background-color: #ffffff ;
+        padding: 5px;
+        padding-top: 0px;
+        padding-left: 0px;
+
+        left: 30px;
+        width: 115px;
+        height: 140px;
+        display: flex;
+        z-index: 15;
+        flex-direction: column;
+        padding-bottom: 27px;
+        font-family: hind,simhei,verdana,Helvetica,sans-serif;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 27px;
+        background: #ffffff ;
+        border: 1px solid #ffffff ;
+
     }
 
-    @media (max-width: 762px) {
-        .card-container{
-            padding: 10px;
-            left: 30px;
-            width: 100px;
-            height: 113px;
-            border-bottom: 1px solid #eaeaea;
-            display: flex;
-            flex-direction: column;
-            padding-bottom: 25px;
-            font-family: hind,simhei,verdana,Helvetica,sans-serif;
-            margin-left: 15px;
-            margin-bottom: 15px;
-            background-color: #ffffff ;
-        } }
+
+    .card-container h1{
+        color: #000;
+        font-size: 16px;
+        z-index: 20;
+        margin-bottom: -139px;
+        margin-top: 125px;
+        background-color: #ffffff ;
+        font-family: hind,simhei,verdana,Helvetica,sans-serif;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 110px;
+    }
+
+    .comic-image{
+        width: 110px;
+        height: 107px;
+         z-index: 10;
+         margin-bottom: 0px;
+         margin-top: 0px;
+         border-radius: 5px;
+    }
+
+    .heart-icon{
+        display: none;
+    }
+
+    .up-icon{
+        display: none;
+    }
+
+    .like-container{
+        display: none;
+    }
+
+    .genre-info{
+        display: none;
+    }
 
 
 
-   /*  width: "192px", paddingBottom: "25px",
-    fontFamily:"hind,simhei,verdana,Helvetica,sans-serif",
-    height:"205px", marginLeft: "15px", marginBottom: "15px",
-    display: "flex", flexDirection: "column",
-    backgroundColor: "#ffffff */
+}
+
+
+@media (max-width: 762px) {
+
+.my-serie{
+    position: absolute;
+    color: #000;
+    font-size: 21px;
+    height: 25px;
+    text-align: center;
+    width: 105px;
+    font-family: 'Hind', sans-serif;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    z-index: 10;
+    line-height: 24px;
+    padding-top: 0px;
+text-align: left;
+font-weight: bolder;
+
+}}
+
+
+
+

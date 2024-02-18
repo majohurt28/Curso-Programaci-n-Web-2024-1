@@ -89,6 +89,11 @@ footer h1:hover {
 }
 
 
+:root{
+  background-color: #f4f4f4;;
+
+}
+
 @media (max-width: 762px) { /*! aqui solo movil */
   :root {
     color: #213547;

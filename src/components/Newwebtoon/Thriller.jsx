@@ -79,7 +79,7 @@ const Webtoonthriller = [
         return (
             <div style={{ width: "1200px", height:"250px",
                         background:"#f4f4f4", position:"absolute",
-                        left: "10%", marginLeft: "20px", marginTop: "870px",
+                        left: "10%", marginLeft: "20px", marginTop: "890px",
                          }} className="cardsContainer3">
 
                     <div className="Horror" style={{

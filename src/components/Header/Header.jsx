@@ -12,7 +12,7 @@ export function Header(props) {
         <div className="options" style= {{}}>
             <img  style={{ width: "100px", height: "97"}} className="Logo" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Naver_Line_Webtoon_logo.png" />
             <nav >
-                <ul style= {{display: "flex", flexDirection: "row", fontSize: "20px", marginLeft: "10px", paddingLeft: "20px", marginTop: "40px",  }}>
+                <ul className="li-style" >
                 <li> ORIGINALS</li>
                 <li> GENRES</li>
                 <li> POPULAR</li>
@@ -21,14 +21,14 @@ export function Header(props) {
             </nav>
         </div>
 
-        <div className="buttonContainer">
+        <div className="button-container">
                 <h1>WEBTOON SHOP</h1>
                 <h2><img className="bookIcon" src={book}></img>Creators 101</h2>
                 <button className="publish-button" >
                 Publish</button>
 
                 <button className="user-button" >
-                majo osorio</button>
+                Log In</button>
                 <button className="len-button"><img  style={{}} className="len-icon"src={len}></img></button>
             </div>
             {/* <div className="len-container">
