@@ -94,14 +94,7 @@
     margin-top: -6px;
 }
 
-.my-serie{
-    display: none;
-}
-
-
- @media (max-width: 762px) {
-
-    .my-series{
+.my-series{
     position: absolute;
     color: #000;
     font-size: 21px;
@@ -117,6 +110,15 @@
     padding-top: 0px;
 text-align: left;
 font-weight: bolder;
+
+}
+
+
+ @media (min-width: 762px) {
+
+    .my-series{
+        display: none;
+
 
 }}
 

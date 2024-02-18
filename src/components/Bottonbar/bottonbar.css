@@ -8,24 +8,26 @@
 
 @media (max-width: 762px) {
 .botton-bar{
+
     color: #ffffff;
         font-family: hind,simhei,verdana,Helvetica,sans-serif;
         text-align: center;
         height: 40px;
     background-color: rgb(255, 255, 255);
-    align-items: flex-start;
+     align-items: flex-start;
     display: flex;
     justify-content: center;
     width: 105%;
     height: 75px;
-
-    margin-top: 460px;
+    z-index: 60;
+    margin-top: 410px;
     margin-left: -8px;
     border-top:  2px solid #eaeaea;
 
     }
 
 .icon-container{
+
     height: 50px;
     width: 70PX;
     display: flex;

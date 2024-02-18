@@ -63,21 +63,3 @@
 }
 
 
-.cardsContainer3{
-    width: 600px;
-    height: 200px;
-    display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: #888;
-}
-
-.cardContainer3{
-    padding: 10px;
-
-      left: 30px;
-      width: 100px;
-      height: 200px;
-      border-bottom: 1px solid #eaeaea;
-
-}

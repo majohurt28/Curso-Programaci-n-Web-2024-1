@@ -25,8 +25,9 @@ export default function App() {
             <Cardlist />
             <Footer />
             <NewwebtoonList/>
-            <Thriller/>
             <Bottonbar/>
+            <Thriller/>
+
         </div>
 
     )
