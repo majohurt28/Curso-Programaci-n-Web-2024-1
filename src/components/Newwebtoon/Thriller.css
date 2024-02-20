@@ -212,6 +212,7 @@ font-weight: bolder;
         margin-left: 20px;
         overflow-x: auto;
         overflow-y: hidden;
+        margin-bottom: 25px;
     }
     .card-container3{
         padding: 5px;

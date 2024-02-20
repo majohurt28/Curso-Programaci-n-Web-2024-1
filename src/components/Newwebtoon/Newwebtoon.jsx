@@ -13,6 +13,7 @@ const Webtoonromance = [
         Up: "./images/up.png",
         genre: "Horror",
         image: "https://swebtoon-phinf.pstatic.net/20240110_186/1704854140792KTNWo_JPEG/2LandingPage_mobile.jpg?type=crop540_540",
+        position: "1",
     }, {
         key: 2,
         name: "Sweet Home",
@@ -21,6 +22,7 @@ const Webtoonromance = [
         Up: "./images/up.png",
         genre: "Horror",
         image: "https://swebtoon-phinf.pstatic.net/20191102_266/15726481658710e2gL_JPEG/6.jpg?type=crop540_540",
+        position: "2",
     },{
         key: 3,
         name: "#Killstagram",
@@ -29,7 +31,8 @@ const Webtoonromance = [
         Up: "./images/up.png",
         genre: "Horror",
         image: "https://production.listennotes.com/podcasts/annyeong/ep-46-killstagram-cKAZQdevVti-1oLxrT8RS7B.1400x1400.jpg",
-        },{
+        position: "3",
+    },{
             key: 4,
             name: "All of Us are Dead",
             heart: "./images/heart.png",
@@ -37,7 +40,8 @@ const Webtoonromance = [
             Up: "./images/up.png",
             genre: "Horror",
             image: "https://swebtoon-phinf.pstatic.net/20220128_151/1643374152582KXe7N_PNG/8mo.episode.png?type=crop540_540",
-            },
+            position: "4",
+        },
     ]
 
 //Card container for Genres: Romance and Horror
@@ -45,23 +49,19 @@ const NewwebtoonList = () =>{
 
     const renderNewlist = () =>{
     return Webtoonromance.map ((value, index) => (
-        <div style={{ width: "192px", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif",  height:"205px", marginLeft: "15px", marginBottom: "15px", display: "flex", flexDirection: "column", backgroundColor: "#ffffff"  }}
+        <div
         className="card-container2" key={value.key}>
 
-            <h1 style={{ color: "#000", fontSize:"19px", color: "#000", marginTop:"0px" }}>{value.name}</h1>
-            <img style={{ width: "45px", height:"45px", zIndex: "20", marginBottom: "2px", marginTop: "-5px"}} src={up}></img>
-            <img style={{ width: "190px", height:"177px", zIndex: "10",marginTop: "-45px"}}src={value.image}></img>
-
-            <p className="likeContainer" style={{ height: "17px", width: "20px",  alignItems: "flex-start",display: "flex", backgroundColor: "#ffffff",
-                marginTop: "-50px", backgroundColor: "#ffffff"}}>
-                <img style={{ width: "15px", height:"15px", zIndex: "30", backgroundColor: "#ffffff", paddingLeft: "-5px", paddingBottom: "32px",
-                paddingTop: "6px", marginTop: "-3px",}}src={heartImg} ></img>
-                <p style={{ color: "#00dc64", fontWeight: "bolder", marginLeft: "0px", marginTop: "-3px",
-                marginBottom: "2px", backgroundColor: "#ffffff", zIndex: "35", paddingRight: "138px", paddingLeft: "10px", paddingBottom: "26px",
-                paddingTop: "3px" }}>{value.likes}</p>
+            <h1 >{value.name}</h1>
+            <img className="up-icon2"  src={up}></img>
+            <img className="horror-image" src={value.image}></img>
+            <h2 className="trending-position1"  >{value.position}</h2>
+            <p className="like-container2" >
+                <img className="heart-icon2" src={heartImg} ></img>
+                <p className="number-likes" >{value.likes}</p>
             </p>
+            <p className="horror-genre" >{value.genre}</p>
 
-            <p style={{ color: "#c00355", fontSize:"16px", zIndex: "40", marginTop: "-6px"}} >{value.genre}</p>
         </div>
         ))
     }
@@ -82,6 +82,7 @@ return (
                         <p>Do you love being scared?</p>
                     </div>
             </div>
+            <h1 className="trending-horror"> Trending Horror </h1>
             {renderNewlist()}
 
 

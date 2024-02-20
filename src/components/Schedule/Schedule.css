@@ -36,7 +36,7 @@ font-family: 'Hind', sans-serif;
 
 /**Mobile responsive design**/
 @media (max-width: 762px) {
-  footer{
+  .schedule-container{
     display: none;
   } }
 
