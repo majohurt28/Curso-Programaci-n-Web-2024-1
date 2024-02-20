@@ -1,0 +1,35 @@
+.cards-promotion{
+    width: 1200px;
+    height: 250px;
+    display: flex;
+    background: #f4f4f4;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #f4f4f4;
+    top: 1602px;
+    position: absolute;
+    left: 10%;
+    margin-left: 20px;
+    margin-top: 210px;
+}
+
+.promotion-img{
+    width: 320px;
+    height: 205px;
+    margin-left: 15px;
+}
+
+.my-promotion{
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    height: 45px;
+    line-height: 24px;
+    padding-top: 36px;
+    text-align: center;
+    width: 1150px;
+    margin: 0px;
+    font-family: 'Hind', sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+}

@@ -13,8 +13,9 @@
 
 
     .carousel-container{
+      margin-left: -8px;
       height: 500px;
-    width: 1503px;
+    width: 104%;
     height: 500px;
     background-image: url("https://webtoons-static.pstatic.net/image/pc/home_bg004.jpg");
     }
