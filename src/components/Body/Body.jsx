@@ -4,6 +4,7 @@ import Thriller from "../Newwebtoon/Thriller"
 import NewwebtoonList from "../Newwebtoon/Newwebtoon"
 import  {Carousel} from "../Carousel/Carousel";
 import { Schedule } from "../Schedule/Schedule";
+/* import PROMOTIONLIST from "../Cards/Promotioncard" */
 //importar react en cada archivo
 
 export function Body(props){
@@ -15,6 +16,7 @@ export function Body(props){
             <Cardlist></Cardlist>
             <NewwebtoonList></NewwebtoonList>
             <Thriller></Thriller>
+            {/* <PROMOTIONLIST></PROMOTIONLIST> */}
         </main>
     )
 }

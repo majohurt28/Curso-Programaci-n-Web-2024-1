@@ -218,7 +218,7 @@ line-height: 25px;
         font-family: hind,simhei,verdana,Helvetica,sans-serif;
         margin-left: 0px;
         margin-bottom: 0px;
-        margin-top: 42px;
+        margin-top: 37px;
         background: #ffffff ;
         border: 1px solid transparent ;
     }
@@ -241,8 +241,8 @@ line-height: 25px;
         z-index: 5;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: #795858;
-        background: #955555;
+        background-color: #ffffff;
+        background: #ffffff;
         padding-bottom: 0px;
         position: absolute;
         left: 0%;
@@ -262,7 +262,7 @@ line-height: 25px;
         z-index: 20;
         margin-bottom: -139px;
         margin-top: 125px;
-        background-color: #643131 ;
+        background-color: #ffffff ;
         font-family: hind,simhei,verdana,Helvetica,sans-serif;
         white-space: nowrap;
         overflow: hidden;
@@ -275,10 +275,10 @@ line-height: 25px;
     .horror-image{
         width: 110px;
         height: 107px;
-         z-index: 10;
-         margin-bottom: 0px;
-         margin-top: -9px;
-         border-radius: 5px;
+        z-index: 10;
+        margin-bottom: 0px;
+        margin-top: -9px;
+        border-radius: 5px;
     }
 
     .up-icon2{
