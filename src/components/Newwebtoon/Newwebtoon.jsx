@@ -45,7 +45,8 @@ const NewwebtoonList = () =>{
 
     const renderNewlist = () =>{
     return Webtoonromance.map ((value, index) => (
-        <div style={{ width: "192px", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif",  height:"205px", marginLeft: "15px", marginBottom: "15px", display: "flex", flexDirection: "column", backgroundColor: "#ffffff"  }} className="cardContainer2" key={value.key}>
+        <div style={{ width: "192px", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif",  height:"205px", marginLeft: "15px", marginBottom: "15px", display: "flex", flexDirection: "column", backgroundColor: "#ffffff"  }}
+        className="card-container2" key={value.key}>
 
             <h1 style={{ color: "#000", fontSize:"19px", color: "#000", marginTop:"0px" }}>{value.name}</h1>
             <img style={{ width: "45px", height:"45px", zIndex: "20", marginBottom: "2px", marginTop: "-5px"}} src={up}></img>
@@ -71,16 +72,11 @@ const NewwebtoonList = () =>{
 
 
 return (
-    <div style={{ width: "1200px", height:"250px", background:"#f4f4f4",
-                position:"absolute", left: "10%", marginLeft: "20px",
-                marginTop: "525px",}} className="cardsContainer2">
+    <div className="cards-container2">
              <h1  className="main-genre"> GENRES </h1>
 
-            <div className="Horror" style={{
-                width: "212px", fontFamily:"hind,simhei,verdana,Helvetica,sans-serif",
-                height:"225px", marginLeft: "15px",
-                marginBottom: "15px", display: "flex",
-                flexDirection: "column", backgroundColor: "#434458" }} >
+            <div className="horror-container" style={{
+               }} >
                     <div className="info-genre">
                         <strong>Horror<em> | </em></strong>
                         <p>Do you love being scared?</p>

@@ -96,30 +96,29 @@ const Cards = [
 
 const Cardlist = () => {
 /**Card cointainer: Name, Up image, Background, Heart icon, "like", genre */
-const Renderlist = () => {
-    return Cards.map((value, index) => (
-        <div  className="card-container" key={value.key}>
-            <h1>{value.name}</h1>
-            <img className="up-icon"  src={up}></img>
-            <img className="comic-image" src={value.image}></img>
+    const Renderlist = () => {
+        return Cards.map((value, index) => (
+            <div  className="card-container" key={value.key}>
+                <h1>{value.name}</h1>
+                <img className="up-icon"  src={up}></img>
+                <img className="comic-image" src={value.image}></img>
 
-            <p className="like-container">
-                <img className="heart-icon" src={heartImg} ></img>
-                <p>{value.likes}</p>
-            </p>
+                <p className="like-container">
+                    <img className="heart-icon" src={heartImg} ></img>
+                    <p>{value.likes}</p>
+                </p>
 
-            <p className="genre-info"  >{value.genre}</p>
+                <p className="genre-info"  >{value.genre}</p>
 
-        </div>
-        ))
-}
+            </div>
+            ))
+    }
 
     return (
         <div className="cards-container">
 
-         <h1 className="my-series"> My Series </h1>
+            <h1 className="my-series"> My Series </h1>
             {Renderlist()}
-
 
         </div>
 

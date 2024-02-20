@@ -1,16 +1,7 @@
 import React from "react"
 import { Header } from "./components/Header/Header";
 import { Body } from "./components/Body/Body";
-import { Footer } from "./components/Footer/Footer";
-import  Cardlist  from "./components/Cards/Card";
-import  {Carousel} from "./components/Carousel/Carousel";
-import NewwebtoonList from "./components/Newwebtoon/Newwebtoon"
-import Thriller from "./components/Newwebtoon/Thriller"
 import Bottonbar from "./components/Bottonbar/Bottonbar"
-
-/* import  Cardsnew from "./components/Newwebtoon/Newwebtoon"; */
-
-/* import  { Cards } from "./components/Cards/Cards"; */
 
 export default function App() {
     return (
@@ -20,13 +11,8 @@ export default function App() {
 
         }}>
             <Header  color= '#000' />
-            <Carousel/>
             <Body />
-            <Cardlist />
-            <Footer />
-            <NewwebtoonList/>
             <Bottonbar/>
-            <Thriller/>
 
         </div>
 

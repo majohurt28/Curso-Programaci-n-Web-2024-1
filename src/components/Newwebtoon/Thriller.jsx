@@ -44,9 +44,9 @@ const Webtoonthriller = [
     ]
 
     const Thriller = () =>{
-
-        const renderThriller = () =>{
+    const renderThriller = () =>{
         return Webtoonthriller.map ((value, index) => (
+
             <div className="card-container3" key={value.key}>
 
                 <h1>{value.name}</h1>
@@ -55,9 +55,9 @@ const Webtoonthriller = [
                 <img className="comic-image3" src={value.image}></img>
                 <h2 className="trending-position"  >{value.position}</h2>
                 <p className="like-container3">
-                <img className="heart-icon3" src={heartImg} ></img>
-                <p>{value.likes}</p>
-            </p>
+                    <img className="heart-icon3" src={heartImg} ></img>
+                    <p>{value.likes}</p>
+                </p>
                 <p className="genre-info3"  >{value.genre}</p>
             </div>
         ))
@@ -65,22 +65,24 @@ const Webtoonthriller = [
 
 
 
-        return (
+return (
             <div style={{ }} className="cards-container3">
 
-                    <div className="thriller-info" style={{ }} >
-                            <div className="info-genre3">
-                                <strong>Thriller<em className="em-info" style={{}}> | </em></strong>
-                                <p>Chill, Shiver and Shudder</p>
-                            </div>
-             </div>
-             <h1 className="trending-thriller"> Trending Thriller </h1>
+                <div className="thriller-info" style={{ }} >
+                    <div className="info-genre3">
+                            <strong>Thriller
+                                <em className="em-info" > | </em>
+                            </strong>
+                            <p>Chill, Shiver and Shudder</p>
+                    </div>
+                </div>
+                <h1 className="trending-thriller"> Trending Thriller </h1>
 
-            {renderThriller()}
+                {renderThriller()}
 
 
             </div>
         )
-        }
+}
 
-        export default Thriller;
+export default Thriller;

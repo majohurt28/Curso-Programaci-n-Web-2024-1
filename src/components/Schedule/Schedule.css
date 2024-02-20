@@ -1,0 +1,43 @@
+.schedule-container{
+    color: #000;
+    font-family: hind,simhei,verdana,Helvetica,sans-serif;
+    text-align: center;
+}
+
+
+.schedule-container{
+height: 60px;
+  background-color: rgb(255, 255, 255);
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  top: 600px;
+  width: 105%;
+  border-bottom: 1px solid #eaeaea;
+}
+
+
+.schedule-container h1{
+  font-size: 21px;
+  font-weight: 700px;
+    height: 60px;
+    width: 120px;
+margin-top: 20px;
+font-family: 'Hind', sans-serif;
+
+}
+
+.schedule-container h1:hover {
+  color: #00dc64;
+  font-weight: 550;
+
+}
+
+
+/**Mobile responsive design**/
+@media (max-width: 762px) {
+  footer{
+    display: none;
+  } }
+
+
