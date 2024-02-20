@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 
 const Promotion = (props) => {
     return (
@@ -10,4 +10,4 @@ const Promotion = (props) => {
     )
 }
 
-export default Promotion
+export default Promotion */
