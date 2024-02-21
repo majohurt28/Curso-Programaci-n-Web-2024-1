@@ -23,7 +23,8 @@
     @media (max-width: 762px) {
       .carousel-container{
         margin-top: -98px;
-        background-image: url("https://assetsio.reedpopcdn.com/Everdate.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp");
+        background-image: url('https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2019/09/lets-play-mobile-banner6-1-e1567656475683.jpg');
+        background-position: top;
         height: 360px;
         width: 105%;
         margin-left: -8px;

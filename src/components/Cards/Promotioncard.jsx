@@ -14,7 +14,8 @@ export function Promotionsection () {
         }
     };
 
-    const Promotioncards = [
+
+const Promotioncards = [
         {
             id: crypto.randomUUID(),
             tittle: "Morgana and Oz",
@@ -46,8 +47,7 @@ export function Promotionsection () {
             <div  className="card-promotion" key={id}>
 
                 <div className="information-cont">
-                    <h1>{tittle}</h1>
-                    <p>{description}</p>
+                    <h1>{tittle}</h1>                    <p>{description}</p>
                 </div>
                 <img className="promotion-img" src={image}></img>
 
@@ -67,6 +67,7 @@ export function Promotionsection () {
                     <img src={Arrow}></img>
                 </button>
             </div>
+            <h1 className="promotion-tittle">Promotion</h1>
             <div className="cards-promotion" ref={containerRef}>
                 {Renderpromlist()}
             </div>

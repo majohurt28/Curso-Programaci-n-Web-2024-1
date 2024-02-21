@@ -40,43 +40,13 @@ const { content, color } = props
 
             </div>
 
-            <Menu items={LINKS} showMenu={showMenu}/>
-            <button
-                id='hamburguer-btn'
-                onClick={handleShowMenu}
-            >
-
-            </button>
-
-
+            <button onClick={handleShowMenu} className='hamburger-menu'>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="hamburger menu" />
+                </button>
 
         </header>
         )
 }
 
 
-function Menu ({ items, showMenu }) {
-    return (
-    <nav className={!showMenu ? 'hidden' : ''}>
-        <ul className="menu-content">
-          {
-            items.map((item) =>
-                <MenuItem
-                  item={item}
-                  key={item.id}
-                />)
-            }
-        </ul>
-    </nav>
-    )
-  }
-
-  function MenuItem ({ item }) {
-    const { text } = item
-    return (
-      <li>
-        <a href=''>{text}</a>
-      </li>
-    )
-  }
 

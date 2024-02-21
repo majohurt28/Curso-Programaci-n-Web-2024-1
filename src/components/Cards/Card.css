@@ -11,7 +11,15 @@
     position: absolute;
     left: 10%;
     margin-left: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
+
+.cards-container::-webkit-scrollbar{
+    height: 5px;
+    background-color: transparent;
+}
+
 
 
 .card-container{
@@ -36,6 +44,8 @@
     background-color: #fd337f;
     color: #ffffff;
    }
+
+
 
  .card-container:hover .comic-name{
      color: #ffffff;
@@ -165,7 +175,7 @@
 @media (max-width: 762px) {
 
 .cards-container{
-    width: 340%;
+    width: 380px;
     height: 190px;
     top: 385px;
     display: flex;
@@ -178,7 +188,12 @@
     left: 0%;
     margin-left: 20px;
     overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+
+
 
 .card-container{
         padding: 5px;
@@ -239,6 +254,9 @@
     .genre-info{
         display: none;
     }
+
+
+
 
 }
 

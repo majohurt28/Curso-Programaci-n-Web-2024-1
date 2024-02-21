@@ -64,6 +64,32 @@
     background-color: transparent;
 }
 
+
+.promotion-tittle{
+    position: relative;
+    color: #000;
+    font-size: 21px;
+    height: 25px;
+    text-align: center;
+    width: 175px;
+    font-family: 'Hind', sans-serif;
+    left: 12px;
+    margin-bottom: 0px;
+    z-index: 10;
+    line-height: 24px;
+    padding-top: 0px;
+    text-align: left;
+    font-weight: bolder;
+
+}
+
+@media (min-width: 762px){}
+.promotion-tittle{
+    display: none;
+}
+
+
+
 /**Card-promotion content**/
 
 .information-cont h1{
@@ -140,7 +166,6 @@
 
 }
 
-
 .left-button button{
     position: relative;
     top: 60px;
@@ -156,4 +181,75 @@
     width: 30px;
     margin-left: -7px;
     transform: rotate(90deg);
+}
+
+
+@media (max-width: 762px) {
+
+    .promotion-img{
+        width: 350px;
+        height: 210px;
+        margin-top: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .cards-promotion{
+        width: 380px;
+         height: 280px;
+         display: flex;
+         background: transparent;
+         flex-direction: column;
+         flex-wrap: wrap;
+
+         top: 900px;
+         position: absolute;
+         left: 0%;
+         margin-left: 5px;
+         margin-top: 210px;
+        /*  border-top: 1px solid #eaeaea; */
+         overflow-x: auto;
+         overflow-y: hidden;
+     }
+
+     .card-promotion{
+        width: 350px;
+        margin-left: 14px;
+        margin-right: 8px;
+        height: 280px;
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: #f4f4f4;
+        border-radius: 5px;
+    }
+
+
+     .left-button{
+        display: none;
+    }
+
+    .right-button{
+        display: none;
+    }
+
+    .my-promotion{
+        display: none;
+    }
+
+
+
+    .information-cont{
+        position: absolute;
+        width: 292px;
+        height: 220px;
+        color: transparent;
+        font-family: 'Hind', sans-serif;
+        z-index: 40;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: transparent;
+    }
+
 }
