@@ -30,8 +30,6 @@
     margin-bottom: 15px;
     background-color: #ffffff ;
     left: 30px;
-
-
     border-bottom: 1px solid #eaeaea;
 
 }
@@ -193,11 +191,11 @@ line-height: 25px;
     line-height: 24px;
     padding-top: 36px;
     text-align: center;
-    width: 1150px;
+    width: 1200px;
     margin: 0px;
     font-family: 'Hind', sans-serif;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 30px;
+    padding-right: 60px;
 }
 
 

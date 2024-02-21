@@ -27,14 +27,44 @@
     margin-left: 15px;
     margin-bottom: 15px;
     background-color: #ffffff ;
+    transition-duration: .5s;
+}
+
+/**Hovers*/
+
+.card-container:hover {
+    background-color: #fd337f;
+    color: #ffffff;
+   }
+
+ .card-container:hover .comic-name{
+     color: #ffffff;
+ }
+
+ .card-container:hover .genre-info{
+     color: #ffffff;
+ }
+
+ .card-container:hover .comic-image{
+     display: none;
+ }
+
+ .card-container:hover .like-container{
+    display: none;
+}
+
+.card-container:hover .up-icon1{
+    display: none;
 }
 
 
-.card-container h1{
+
+.comic-name{
     color: #000;
     font-size: 19px;
     margin-top: 0px;
     font-weight: 500;
+
 }
 
 .up-icon1{
@@ -54,6 +84,7 @@
     padding-bottom: 32px;
     padding-top: 6px;
     margin-top: 2px;
+    transition-duration: .3s;
 }
 
 .comic-image{
@@ -61,11 +92,13 @@
     height: 177px;
      z-index: 10;
      margin-top: -45px;
+     transition-duration: .5s;
+
 }
 
 .like-container{
     height: 17px;
-    width: 20px  ;
+    width: 190px  ;
     align-items: flex-start;
     display: flex;
     background-color: #ffffff;
@@ -76,15 +109,19 @@
 .like-container p{
     color: #00dc64 ;
     font-weight: bolder;
+    width: 54px;
     margin-left: 0px;
     margin-top: -3px;
     margin-top: 2px;
     background-color: #ffffff;
     z-index: 35;
-    padding-right: 138px ;
-    padding-left: 10px;
+    padding-right: 117px ;
+    padding-left: 4px;
     padding-bottom: 26px;
     padding-top: 3px;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 .genre-info{
@@ -92,6 +129,7 @@
     font-size: 16px ;
     z-index: 40;
     margin-top: -6px;
+
 }
 
 .my-series{
@@ -108,18 +146,15 @@
     z-index: 10;
     line-height: 24px;
     padding-top: 0px;
-text-align: left;
-font-weight: bolder;
+    text-align: left;
+    font-weight: bolder;
 
 }
 
 
  @media (min-width: 762px) {
-
     .my-series{
         display: none;
-
-
 }}
 
 
@@ -145,8 +180,7 @@ font-weight: bolder;
     overflow-x: auto;
 }
 
-
-    .card-container{
+.card-container{
         padding: 5px;
         padding-top: 0px;
         padding-left: 0px;
@@ -167,8 +201,7 @@ font-weight: bolder;
 
     }
 
-
-    .card-container h1{
+    .comic-name{
         color: #000;
         font-size: 16px;
         z-index: 20;
@@ -206,8 +239,6 @@ font-weight: bolder;
     .genre-info{
         display: none;
     }
-
-
 
 }
 

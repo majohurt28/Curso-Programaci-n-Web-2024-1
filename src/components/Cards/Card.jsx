@@ -99,7 +99,7 @@ const Cardlist = () => {
     const Renderlist = () => {
         return Cards.map(({id, name, heart, likes, up, genre, image}) => (
             <div  className="card-container" key={id}>
-                <h1>{name}</h1>
+                <h1 className="comic-name">{name}</h1>
                 <img className="up-icon1"  src={Up}></img>
                 <img className="comic-image" src={image}></img>
 
