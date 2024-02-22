@@ -117,7 +117,7 @@ const Cardlist = () => {
     return (
         <div className="cards-container">
 
-            <h1 className="my-series"> My Series </h1>
+            {/* <h1 className="my-series"> My Series </h1> */}
             {Renderlist()}
 
         </div>

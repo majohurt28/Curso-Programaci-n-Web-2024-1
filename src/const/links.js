@@ -1,14 +1,14 @@
 export const LINKS = [
     {
       id: crypto.randomUUID(),
-      text: 'Sobre Nosotros'
+      text: 'ORIGINALS'
     },
     {
       id: crypto.randomUUID(),
-      text: 'Servicios'
+      text: 'GENRES'
     },
     {
       id: crypto.randomUUID(),
-      text: 'Contactenos'
+      text: 'POPULAR'
     }
   ]

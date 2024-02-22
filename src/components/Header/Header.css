@@ -1,17 +1,17 @@
-header{
-display: flex;
-flex-direction: row;
- justify-content: space-evenly;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: #ffffff;
-  font-family: hind,simhei,verdana,Helvetica,sans-serif;
+  font-family: hind, simhei, verdana, Helvetica, sans-serif;
   width: 105%;
   height: 99px;
-margin-top: -10px;
+  margin-top: -10px;
 }
 
 /** Options container */
 
-.options{
+.options {
   display: flex;
   flex-direction: row;
   margin-left: -100px;
@@ -20,11 +20,11 @@ margin-top: -10px;
   font-weight: 700;
 }
 
-li{
-    list-style: none;
-    margin-left: 13px;
-    color: #000;
-    font-family: hind,simhei,verdana,Helvetica,sans-serif;
+li {
+  list-style: none;
+  margin-left: 13px;
+  color: #000;
+  font-family: hind, simhei, verdana, Helvetica, sans-serif;
 }
 
 li:hover {
@@ -33,7 +33,7 @@ li:hover {
 
 }
 
-.li-style{
+.li-style {
   display: flex;
   flex-direction: row;
   font-size: 20px;
@@ -44,45 +44,45 @@ li:hover {
 }
 
 /** Buttons container, h1 and h2  */
-.button-container{
-    height: 90px;
-    margin-left: 90px;
-    display: flex;
-    flex-direction: row;
-    margin-Top: 16px;
+.button-container {
+  height: 90px;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: row;
+  margin-Top: 16px;
 }
 
-.button-container h1{
-    font-size: 20px;
-    font-weight: bolder;
-    margin-right: 10px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    height: 50px;
-    font-family: hind,simhei,verdana,Helvetica,sans-serif;
-    color: rgb(0, 220, 100);
-    margin-top: 25px;
+.button-container h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  height: 50px;
+  font-family: hind, simhei, verdana, Helvetica, sans-serif;
+  color: rgb(0, 220, 100);
+  margin-top: 25px;
 }
 
 
-.button-container h2{
-    font-size: 18px;
-    font-weight: bolder;
-    margin-right: 5px;
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    height: 50px;
-    margin-top: 22px;
-    color: #000;
-    font-family: hind,simhei,verdana,Helvetica,sans-serif;
+.button-container h2 {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  height: 50px;
+  margin-top: 22px;
+  color: #000;
+  font-family: hind, simhei, verdana, Helvetica, sans-serif;
 }
 
-button{
-    margin-top: 20px;
+button {
+  margin-top: 20px;
 }
 
-.publish-button{
+.publish-button {
   background: #2f2f2f;
   border-radius: 17px;
   color: #fff;
@@ -91,14 +91,14 @@ button{
   height: 33px;
   width: 104px;
   margin-left: 13px;
-  font-family: hind,simhei,verdana,Helvetica,sans-serif;
+  font-family: hind, simhei, verdana, Helvetica, sans-serif;
 }
 
 
-.user-button{
+.user-button {
   background-color: #ffffff;
- border-radius: 17px;
- color: #838383;
+  border-radius: 17px;
+  color: #838383;
   font-size: 14px;
   font-weight: 500;
   border: 1px solid #b4b4b4;
@@ -106,64 +106,64 @@ button{
   height: 33px;
   width: 104px;
   margin-left: 7px;
-  font-family: hind,simhei,verdana,Helvetica,sans-serif;
+  font-family: hind, simhei, verdana, Helvetica, sans-serif;
 }
 
 .Banner {
-    height: 420px;
-    z-index: 300;
-    top: 230;
-    margin-top: 40px;
-    margin-left: 42px;}
+  height: 420px;
+  z-index: 300;
+  top: 230;
+  margin-top: 40px;
+  margin-left: 42px;
+}
 
 
-    .Background {
-      width: 0px;
-  }
+.Background {
+  width: 0px;
+}
 
-  @media (min-width: 600px) {
-    .Background {
+@media (min-width: 600px) {
+  .Background {
     height: 500px;
     left: -20px;
     top: -200;
     z-index: 50;
     width: 1540px;
-  } }
-
-  .bookIcon{
-    width: 22px;
-    height: 19px;
-    margin-right: 7px;
-    padding-top: 3px;
-
   }
+}
 
-  /** Len Icon and burguer menu */
+.bookIcon {
+  width: 22px;
+  height: 19px;
+  margin-right: 7px;
+  padding-top: 3px;
 
-  .len-button{
-    background-color: #ffffff96;
-    border-radius: 50%;
-    border: 1.5px solid #b4b4b4;
-    height: 36px;
-    width: 36px;
-    margin-left: 30px;
-  }
+}
 
-  .len-icon{
-    margin-left: -6px;
-    margin-top: -1px;
-    width: 34px;
-    height: 34px;
-  }
+/** Len Icon and burguer menu */
 
-  .Logo{
+.len-button {
+  background-color: #ffffff96;
+  border-radius: 50%;
+  border: 1.5px solid #b4b4b4;
+  height: 36px;
+  width: 36px;
+  margin-left: 30px;
+}
 
-    margin-left: 15px;
-    height: 100px;
-    width: 97px;
-    top: 2px;
-  }
+.len-icon {
+  margin-left: -6px;
+  margin-top: -1px;
+  width: 34px;
+  height: 34px;
+}
 
+.Logo {
+  margin-left: 15px;
+  height: 100px;
+  width: 97px;
+  top: 2px;
+}
 
 
 
@@ -180,14 +180,15 @@ button{
   .options {
     display: none;
   }
-  }
+}
 
 
 @media (max-width: 762px) {
-  .publish-button{
+  .publish-button {
     display: none;
   }
-  .user-button{
+
+  .user-button {
     display: none;
   }
 }
@@ -199,14 +200,45 @@ button{
 
   .button-container h1 {
     display: none;
-  }}
+  }
+}
 
-  @media (max-width: 600px) {
-    .len-button {
-      background-color: #e9e4e4;
-      border: 1.5px solid #e9e4e4;
-      margin-left: 340%;
-}}
+@media (max-width: 600px) {
+  .len-button {
+    background-color: #e9e4e4;
+    border: 1.5px solid #e9e4e4;
+    margin-left: 340%;
+  }
+}
 
 /**Burguer menu**/
+
+.hamburger-menu{
+  position: relative;
+  left: 160px;
+  border-radius: 5px;
+  background-color: #ffffff96;
+  border: 1.5px solid #ffffff96;
+  height: 40px;
+  width: 45px;
+}
+
+.hamburger-menu:hover{
+  background-color: #ffffffbc;
+}
+
+.mobile-design{
+  background-color: #ffffff;
+  position: relative;
+  top: 20px;
+  left: -100px;
+}
+
+@media (min-width: 600px) {
+.hamburger-menu{
+  display: none;
+}}
+
+
+
 

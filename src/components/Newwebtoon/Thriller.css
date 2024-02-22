@@ -196,7 +196,8 @@ margin-left: 95px;
 
 @media (max-width: 762px) {
     .cards-container3{
-        width: 390px;
+        position: relative;
+        width: 600px;
         height: 190px;
         top: 387px;
         display: flex;
@@ -209,7 +210,6 @@ margin-left: 95px;
         position: absolute;
         left: 0%;
         margin-left: 20px;
-
         margin-bottom: 25px;
         overflow-x: auto;
         overflow-y: hidden;
