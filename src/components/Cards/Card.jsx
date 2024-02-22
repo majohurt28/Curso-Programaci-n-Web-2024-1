@@ -4,7 +4,7 @@ import heartImg from "./images/heart.png";
 import Up from "./images/up.png";
 
 
-const Cards = [
+const CardsApi = [
     {
         id: crypto.randomUUID(),
         name: "Freaking Romance",
@@ -97,7 +97,7 @@ const Cards = [
 const Cardlist = () => {
 /**Card cointainer: Name, Up image, Background, Heart icon, "like", genre */
     const Renderlist = () => {
-        return Cards.map(({id, name, heart, likes, up, genre, image}) => (
+        return CardsApi.map(({id, name, heart, likes, up, genre, image}) => (
             <div  className="card-container" key={id}>
                 <h1 className="comic-name">{name}</h1>
                 <img className="up-icon1"  src={Up}></img>

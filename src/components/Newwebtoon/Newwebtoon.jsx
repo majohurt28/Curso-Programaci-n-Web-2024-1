@@ -82,7 +82,7 @@ return (
                         <p>Do you love being scared?</p>
                     </div>
             </div>
-            <h1 className="trending-horror"> Trending Horror </h1>
+            <h1 className="trending-horror"> Trending Horror 🔥 </h1>
             {renderNewlist()}
 
 

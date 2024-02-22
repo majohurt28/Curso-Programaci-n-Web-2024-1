@@ -1,16 +1,15 @@
 .cards-container{
-    width: 1200px;
+    width: 1135px;
     height: 500px;
-    top: 700px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #888;
     background: #f4f4f4;
     padding-bottom: 25px;
-
-    left: 10%;
-    margin-left: 20px;
+    padding-top: 18px;
+    padding-left: 10px;
+    margin: auto;
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -174,24 +173,25 @@
 @media (max-width: 762px) {
 
 .cards-container{
-    width: 380px;
+    width: 680px;
     height: 190px;
-    top: 385px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #ffffff;
     background: #ffffff;
-    padding-bottom: 25px;
-    left: 0%;
+    padding-bottom: 0px;
+    padding-left: 0px;
     margin-left: 20px;
     overflow-x: auto;
     overflow-y: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+
 }
 
-
+.cards-container::-webkit-scrollbar{
+    height: 5px;
+    background-color: transparent;
+}
 
 .card-container{
         padding: 5px;

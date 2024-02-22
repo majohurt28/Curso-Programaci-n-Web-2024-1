@@ -76,7 +76,7 @@ const Thriller = () => {
                     <p>Chill, Shiver and Shudder</p>
                 </div>
             </div>
-            <h1 className="trending-thriller"> Trending Thriller </h1>
+            <h1 className="trending-thriller"> Trending Thriller🔥</h1>
 
             {renderThriller()}
 

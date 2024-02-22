@@ -10,18 +10,16 @@
 }
 
 .cards-container3{
-    width: 1200px;
+    padding-left: 10px;
+    width: 1135px;
     height: 250px;
+    flex-wrap: wrap;
+    background: #f4f4f4;
+    margin: auto;
+    padding-top: 18px;
     display: flex;
     background: #f4f4f4;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background: #f4f4f4;
-    top: 1338px;
-    position: absolute;
-    left: 10%;
-    margin-left: 20px;
-    margin-top: 210px;
+    flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -196,10 +194,8 @@ margin-left: 95px;
 
 @media (max-width: 762px) {
     .cards-container3{
-        position: relative;
         width: 600px;
         height: 190px;
-        top: 387px;
         display: flex;
         z-index: 5;
         flex-direction: row;
@@ -207,20 +203,17 @@ margin-left: 95px;
         background-color: #ffffff;
         background: #ffffff;
         padding-bottom: 0px;
-        position: absolute;
-        left: 0%;
-        margin-left: 20px;
-        margin-bottom: 25px;
         overflow-x: auto;
         overflow-y: hidden;
+        margin-left: 20px;
+        padding-left: 0px;
+        padding-bottom: 0px;
     }
 
     .card-container3{
         padding: 5px;
         padding-top: 0px;
         padding-left: 0px;
-
-        left: 30px;
         width: 115px;
         height: 140px;
         display: flex;
