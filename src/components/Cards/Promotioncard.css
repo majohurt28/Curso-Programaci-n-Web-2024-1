@@ -242,20 +242,36 @@ padding: 0px;
     .my-promotion {
         display: none;
     }
-
-
-
-    .information-cont {
-        position: absolute;
-        width: 292px;
-        height: 220px;
-        color: transparent;
+    .card-promotion:hover .information-cont {
+        width: 361px;
+        height: 210px;
+        color: #000;
         font-family: 'Hind', sans-serif;
         z-index: 40;
-        margin-top: 10px;
-        margin-left: 15px;
-        margin-right: 15px;
-        background-color: transparent;
+        margin: auto;
+        margin-top: 0px;
+        background-color: #ffffffcd;
     }
 
+    .card-promotion:hover .information-cont h1 {
+        font-size: 22px;
+        font-weight: bolder;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
 }
+
+
+@media screen  and (max-width: 762px){
+.card-promotion:hover .information-cont {
+    width: 360px;
+    height: 200px;
+    color: transparent;
+    font-family: 'Hind', sans-serif;
+    z-index: 40;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: transparent;
+}}
