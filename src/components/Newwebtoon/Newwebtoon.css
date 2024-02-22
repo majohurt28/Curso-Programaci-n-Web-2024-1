@@ -1,65 +1,61 @@
-.cards-container2{
-    width: 1200px;
-    height: 250px;
-        top: 700px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: #888;
-        background-color: #f4f4f4;
-        border-top: 1px solid #e5e5e5;
-        position: absolute;
-    margin-top: 525px;
-    left: 10%;
-    margin-left: 20px;
-    }
+.cards-container2 {
+    padding-left: 10px;
+    width: 1135px;
+    height: 305px;
+    flex-wrap: wrap;
+    background: #f4f4f4;
+    margin: auto;
+    padding-top: 18px;
+    display: flex;
+    background: #f4f4f4;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 
 
-.card-container2{
-
+.card-container2 {
     padding: 10px;
-    left: 30px;
     width: 192px;
     height: 190px;
     border-bottom: 1px solid #eaeaea;
     display: flex;
     flex-direction: column;
     padding-bottom: 25px;
-    font-family: hind,simhei,verdana,Helvetica,sans-serif;
+    font-family: hind, simhei, verdana, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
     margin-left: 15px;
     margin-bottom: 15px;
-    background-color: #ffffff ;
-    left: 30px;
-    border-bottom: 1px solid #eaeaea;
 
 }
 
-.card-container2 h1{
-    color:#000 ;
-    font-size:19px;
+.card-container2 h1 {
     color: #000;
-    margin-top:0px;
+    font-size: 19px;
+    color: #000;
+    margin-top: 0px;
 }
 
-.horror-image{
+.horror-image {
     width: 190px;
-    height:177px;
+    height: 177px;
     z-Index: 10;
     margin-top: -45px;
 }
 
 
-.up-icon2{
-    width: 45px ;
-    height:45px;
+.up-icon2 {
+    width: 45px;
+    height: 45px;
     z-index: 20;
     margin-bottom: 2px;
     margin-top: -5px;
 }
 
-.like-container2{
+.like-container2 {
     height: 17px;
-    width: 20px ;
+    width: 20px;
     align-items: flex-start;
     display: flex;
     background-color: #ffffff;
@@ -67,44 +63,45 @@
     background-color: #ffffff;
 }
 
-.horror-genre{
+.horror-genre {
     color: #c00355;
-    font-size:16px;
-    z-Index: 40 ;
+    font-size: 16px;
+    z-Index: 40;
     margin-top: -6px;
 }
 
-.heart-icon2{
-    width: 15px ;
-    height:15px;
+.heart-icon2 {
+    width: 15px;
+    height: 15px;
     z-index: 30;
-    background-color: #ffffff ;
-    padding-left:-5px;
+    background-color: #ffffff;
+    padding-left: -5px;
     padding-bottom: 32px;
     padding-top: 6px;
     margin-top: -3px;
 }
 
-.number-likes{
+.number-likes {
     color: #00dc64;
     font-weight: bolder;
-    margin-left: 0px ;
+    margin-left: 0px;
     margin-top: -3px;
     margin-bottom: 2px;
     background-color: #ffffff;
-    z-index: 35 ;
+    z-index: 35;
     padding-right: 138px;
     padding-left: 10px;
     padding-bottom: 26px;
     padding-top: 3px;
 }
 
-.trending-horror{position: absolute;
+.trending-horror {
+    position: absolute;
     color: #000;
     font-size: 21px;
     height: 25px;
     text-align: center;
-    width: 175px;
+    width: 180px;
     font-family: 'Hind', sans-serif;
     margin-top: 0px;
     margin-left: 0px;
@@ -112,78 +109,81 @@
     z-index: 10;
     line-height: 24px;
     padding-top: 0px;
-text-align: left;
-font-weight: bolder;
+    text-align: left;
+    font-weight: bolder;
 
 }
 
-.trending-position1{
+.trending-position1 {
     font-size: 38px;
     z-index: 20;
     margin-bottom: 2px;
     margin-top: -26px;
 
     width: 50px;
-    font-family: hind,simhei,verdana,Helvetica,sans-serif;
+    font-family: hind, simhei, verdana, Helvetica, sans-serif;
     font-weight: bolder;
-    -webkit-text-stroke-width:3px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 @media (min-width: 762px) {
 
-    .trending-position1{
+    .trending-position1 {
         display: none;
 
-}}
+    }
+}
 
 
 @media (min-width: 762px) {
 
-    .trending-horror{
+    .trending-horror {
         display: none;
 
-}}
+    }
+}
 
 /**Card that contain info about the genre section**/
-.horror-container{
-    width: 212px ;
-    font-family:hind,simhei,verdana,Helvetica,sans-serif;
-    height:225px ;
+.horror-container {
+    width: 212px;
+    font-family: hind, simhei, verdana, Helvetica, sans-serif;
+    height: 225px;
     margin-left: 15px;
     margin-bottom: 15px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     background-color: #434458;
 }
-.info-genre{
+
+.info-genre {
     color: #fff;
     bottom: 15px;
     height: 169px;
-left: 21px;
-top: 21px;
-width: 168px;
-margin: 20px;
+    left: 21px;
+    top: 21px;
+    width: 168px;
+    margin: 20px;
 }
 
-.info-genre strong{
-font-size: 22px;
-font-weight: 500;
-line-height: 25px;
+.info-genre strong {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
 }
 
-.info-genre p{
+.info-genre p {
     font-size: 16px;
     margin-top: 110px;
     font-weight: 500;
     line-height: 20px;
 }
 
-.info-genre em{
+.info-genre em {
     margin-left: 95px;
 }
 
-.main-genre{
+.main-genre {
     color: #000;
     font-size: 22px;
     font-weight: 500;
@@ -201,11 +201,11 @@ line-height: 25px;
 
 /**Mobile responsive design**/
 @media (max-width: 762px) {
-    .card-container2{
+    .card-container2 {
         padding: 5px;
         padding-top: 0px;
         padding-left: 0px;
-    background-color: #c00355;
+        background-color: #c00355;
         left: 30px;
         width: 115px;
         height: 140px;
@@ -213,27 +213,28 @@ line-height: 25px;
         z-index: 15;
         flex-direction: column;
         padding-bottom: 24px;
-        font-family: hind,simhei,verdana,Helvetica,sans-serif;
+        font-family: hind, simhei, verdana, Helvetica, sans-serif;
         margin-left: 0px;
         margin-bottom: 0px;
         margin-top: 37px;
-        background: #ffffff ;
-        border: 1px solid transparent ;
+        background: #ffffff;
+        border: 1px solid transparent;
     }
 
 }
 
 @media (max-width: 762px) {
-    .horror-container{
-        display: none;
-    }
-    .info-genre{
+    .horror-container {
         display: none;
     }
 
-    .cards-container2{
+    .info-genre {
+        display: none;
+    }
+
+    .cards-container2 {
         width: 300%;
-        height: 200px;
+        height: 190px;
         top: 287px;
         display: flex;
         z-index: 5;
@@ -241,27 +242,26 @@ line-height: 25px;
         flex-wrap: wrap;
         background-color: #ffffff;
         background: #ffffff;
+        padding-left: 0px;
         padding-bottom: 0px;
-        position: absolute;
-        left: 0%;
         margin-left: 20px;
         overflow-x: auto;
         overflow-y: hidden;
         border-top: 0px solid #c00355;
-        margin-bottom: 25px;
+
 
     }
 
 
 
-    .card-container2 h1{
+    .card-container2 h1 {
         color: #000;
         font-size: 16px;
         z-index: 20;
         margin-bottom: -139px;
         margin-top: 125px;
-        background-color: #ffffff ;
-        font-family: hind,simhei,verdana,Helvetica,sans-serif;
+        background-color: #ffffff;
+        font-family: hind, simhei, verdana, Helvetica, sans-serif;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -270,7 +270,7 @@ line-height: 25px;
 
     }
 
-    .horror-image{
+    .horror-image {
         width: 110px;
         height: 107px;
         z-index: 10;
@@ -279,19 +279,19 @@ line-height: 25px;
         border-radius: 5px;
     }
 
-    .up-icon2{
+    .up-icon2 {
         display: none;
     }
 
-    .like-container2{
+    .like-container2 {
         display: none;
     }
 
-    .horror-genre{
+    .horror-genre {
         display: none;
     }
 
-    .main-genre{
+    .main-genre {
         display: none;
     }
 }

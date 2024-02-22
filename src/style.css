@@ -13,11 +13,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/*bar*/
 
-.Bar-section{
-  background-color: #646cff;
-}
 
 header h1:hover {
   color: #00dc64;
@@ -43,7 +39,6 @@ height: 200px;
 
 .cardContainer{
   padding: 10px;
-
   left: 30px;
   width: 100px;
   height: 200px;
@@ -54,16 +49,18 @@ height: 200px;
 
 /*Footer*/
 footer{
-
-height: 60px;
+  position: sticky;
   background-color: rgb(255, 255, 255);
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  top: 600px;
-  width: 100%;
-  border-bottom: 1px solid #eaeaea;
+  margin: 0;
+  max-width: 100vw;
+  height: 8vh;
 
+}
+
+@media (min-width: 762px) {
+  footer{
+     display: none;
+  }
 }
 
 footer h1{
@@ -86,9 +83,7 @@ footer h1:hover {
   display: flex;
   flex-direction: column;
 
-
 }
-
 
 
 .read-the-docs {

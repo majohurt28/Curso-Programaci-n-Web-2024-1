@@ -1,4 +1,4 @@
-import './Footer.css'
+
 import React from "react"
 import {Bottonbar} from "../Bottonbar/Bottonbar";
 

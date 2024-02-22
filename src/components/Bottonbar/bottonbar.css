@@ -1,13 +1,10 @@
 .botton-bar {
     display: none;
-
 }
 
 
 @media (max-width: 762px) {
     .botton-bar {
-        position: absolute;
-        left: 3;
         color: #ffffff;
         font-family: hind, simhei, verdana, Helvetica, sans-serif;
         text-align: center;
@@ -23,7 +20,6 @@
     }
 
     .icon-container {
-
         height: 50px;
         width: 70PX;
         display: flex;
@@ -31,8 +27,6 @@
         align-items: center;
         margin-top: 11px;
         margin-right: 5px;
-
-
 
     }
 

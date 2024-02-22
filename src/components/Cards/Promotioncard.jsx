@@ -56,20 +56,20 @@ const Promotioncards = [
     }
 
     return (
-        <div>
+        <div className="promotion-cont">
             <div className="left-button" >
                 <button onClick={() => scroll(-130)}>
-                    <img src={Arrow}></img>
-                </button>
-            </div>
-            <div className="right-button">
-                <button  onClick={() => scroll(130)}>
                     <img src={Arrow}></img>
                 </button>
             </div>
             <h1 className="promotion-tittle">Promotion</h1>
             <div className="cards-promotion" ref={containerRef}>
                 {Renderpromlist()}
+            </div>
+            <div className="right-button">
+                <button  onClick={() => scroll(130)}>
+                    <img src={Arrow}></img>
+                </button>
             </div>
         </div>
         )
