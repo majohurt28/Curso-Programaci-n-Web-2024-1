@@ -48,8 +48,9 @@ const Promotioncards = [
 
                 <div className="information-cont">
                     <h1>{tittle}</h1>                    <p>{description}</p>
+                    <img className="promotion-img" src={image}></img>
                 </div>
-                <img className="promotion-img" src={image}></img>
+
 
             </div>
         ))

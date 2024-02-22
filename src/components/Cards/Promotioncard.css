@@ -39,13 +39,12 @@
 
 
 .information-cont {
-    position: absolute;
+    margin: auto;
     width: 305px;
     height: 220px;
     color: transparent;
     font-family: 'Hind', sans-serif;
     z-index: 40;
-   margin-right: 60px;
     background-color: transparent;
 }
 
@@ -173,9 +172,10 @@
     .promotion-img {
         width: 345px;
         height: 208px;
-        margin-top: 0px;
+        margin: auto;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+        z-index: 20;
     }
     .promotion-cont{
         width: 380px;
@@ -184,6 +184,7 @@
         background: #ffffff;
         flex-direction: row;
         padding-top: 18px;
+        padding-bottom: 15px;
         margin-left: 168px;
         margin-left: 5px;
         border-top-right-radius: 5px;
@@ -191,7 +192,7 @@
 
     .cards-promotion {
         width: 390px;
-        height: 300px;
+        height: 295px;
         display: flex;
         background: transparent;
         flex-direction: column;
@@ -206,13 +207,13 @@
         width: 345px;
 padding: 0px;
         margin-right: 16px;
-        height: 300px;
+        height: 248px;
         z-index: 20;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        /* background: #f4f4f4; */
-        background-color: #5c2c2c;
+       /*   background: #f4f4f4; */
+
         border-radius: 5px;
     }
 
@@ -236,15 +237,16 @@ padding: 0px;
         font-weight: bolder;
         margin-left: 10px;
         margin-bottom: 0px;
-        color: #ffffff;
+        color: #000;
     }
 
     .information-cont p {
         font-size: 14px;
         margin-left: 10px;
         margin-top: 10px;
-        color: #ffffff;
+        color: #000;
     }
+
 
 
 }
