@@ -6,6 +6,7 @@ import App from './App.jsx'
 const appContainer = document.querySelector("#app")
 
  //id en html
+
 const root = createRoot(appContainer)
  // devuelve un root a partir del componente que estamos creando
 
