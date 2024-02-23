@@ -7,7 +7,7 @@
     background-color: #888;
     background: #f4f4f4;
     padding-bottom: 25px;
-    padding-top: 0px;
+    padding-top: 18px;
     padding-left: 10px;
     margin: auto;
 }
@@ -165,7 +165,7 @@
 @media (max-width: 762px) {
 
     .cards-container {
-        width: 680px;
+        width: 100%;
         height: 190px;
         display: flex;
         flex-direction: row;
@@ -198,7 +198,7 @@
         font-family: hind, simhei, verdana, Helvetica, sans-serif;
         margin-left: 0px;
         margin-bottom: 0px;
-        margin-top: 24px;
+        margin-top: 15px;
         background: #ffffff;
         border: 1px solid #ffffff;
     }
