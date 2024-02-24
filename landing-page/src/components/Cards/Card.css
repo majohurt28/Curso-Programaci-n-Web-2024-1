@@ -175,8 +175,10 @@
         padding-bottom: 0px;
         padding-left: 0px;
         margin-left: 20px;
-        overflow-x: auto; /* Habilita el desplazamiento horizontal si es necesario */
-        overflow-y: hidden; /* Oculta el desplazamiento vertical */
+        overflow-x: auto;
+        /* Habilita el desplazamiento horizontal si es necesario */
+        overflow-y: hidden;
+        /* Oculta el desplazamiento vertical */
         white-space: nowrap;
     }
 
