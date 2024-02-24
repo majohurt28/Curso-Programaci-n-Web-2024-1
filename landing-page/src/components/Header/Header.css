@@ -205,9 +205,7 @@ button {
 
 @media (max-width: 600px) {
   .len-button {
-    background-color: #e9e4e4;
-    border: 1.5px solid #e9e4e4;
-    margin-left: 340%;
+    display: none;
   }
 }
 
@@ -215,7 +213,7 @@ button {
 
 .hamburger-menu{
   position: relative;
-  left: 160px;
+  left: 114px;
   border-radius: 5px;
   background-color: #ffffff96;
   border: 1.5px solid #ffffff96;
@@ -231,7 +229,7 @@ button {
   background-color: #ffffff;
   position: relative;
   top: 20px;
-  left: -100px;
+  left: -30px;
 }
 
 @media (min-width: 600px) {

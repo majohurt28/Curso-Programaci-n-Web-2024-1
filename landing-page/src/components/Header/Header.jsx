@@ -38,11 +38,13 @@ export function Header(props) {
           <img className="len-icon" alt='Hamburger button' src={len}></img>
         </button>
 
-      </div>
-
-      <button onClick={handleShowMenu} className='hamburger-menu'>
+        <button onClick={handleShowMenu} className='hamburger-menu'>
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="hamburger menu" />
       </button>
+
+      </div>
+
+
       {
         showMenu
           ? (

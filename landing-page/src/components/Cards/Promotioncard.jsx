@@ -24,7 +24,7 @@ const Promotioncards = [
         }, {
             id:crypto.randomUUID(),
             tittle: "Pride Month",
-            description: "It's the gayest time of the year! 🌈 And we’re here to share our #Pride Collection that spotlights LGBTQIA+ creators and characters.",
+            description: "It's the gayest time of the year! 🌈 And we’re here to share our #Pride Collection.",
             image: " https://pm1.aminoapps.com/7217/142ee3ec4ab6e43894d926e91be68449036b04e6r1-943-492v2_uhq.jpg",
 
             },{
@@ -47,8 +47,10 @@ const Promotioncards = [
             <div  className="card-promotion" key={id}>
 
                 <div className="information-cont">
-                    <h1>{tittle}</h1>                    <p>{description}</p>
                     <img className="promotion-img" src={image}></img>
+                    <h1>{tittle}</h1>
+                    <p>{description}</p>
+
                 </div>
 
 

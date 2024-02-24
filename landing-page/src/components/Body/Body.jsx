@@ -1,4 +1,5 @@
 import React from "react"
+import './Body.css'
 import  Cardlist  from "../Cards/Card";
 import Thriller from "../Newwebtoon/Thriller"
 import NewwebtoonList from "../Newwebtoon/Newwebtoon"
