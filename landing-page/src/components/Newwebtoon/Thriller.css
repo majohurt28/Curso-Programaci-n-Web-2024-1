@@ -181,13 +181,14 @@
 }
 
 @media (max-width: 762px) {
-    .thriller-cont{
+    .thriller-cont {
         width: 380px;
         display: flex;
-    background: #ffffff;
-    flex-direction: row;
-    margin-left: 2px;
+        background: #ffffff;
+        flex-direction: row;
+        margin-left: 2px;
     }
+
     .cards-container3 {
         width: 100%;
         height: 190px;
@@ -198,7 +199,7 @@
         background-color: #ffffff;
         background: #ffffff;
         overflow-x: auto;
-    overflow-y: hidden;
+        overflow-y: hidden;
         padding: 0px;
         margin-left: 18px;
     }

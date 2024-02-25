@@ -17,6 +17,7 @@ export function Body(props){
             <Carousel></Carousel>
             <Schedule></Schedule>
             <Cardlist></Cardlist>
+            <h1 className="trending-horror"> Trending Horror 🔥 </h1>
             <NewwebtoonList></NewwebtoonList>
             <h1 className="trending-thriller"> Trending Thriller🔥</h1>
             <Thriller></Thriller>

@@ -14,7 +14,6 @@ export function Promotionsection () {
         }
     };
 
-
 const Promotioncards = [
         {
             id: crypto.randomUUID(),
@@ -50,9 +49,7 @@ const Promotioncards = [
                     <img className="promotion-img" src={image}></img>
                     <h1>{tittle}</h1>
                     <p>{description}</p>
-
                 </div>
-
 
             </div>
         ))
