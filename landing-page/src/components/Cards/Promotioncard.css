@@ -110,10 +110,7 @@
 }
 
 .right-button button {
-
-
     background-color: #f4f4f4;
-
     height: 40px;
     width: 40px;
     margin: auto;
@@ -134,7 +131,6 @@
 }
 
 .left-button button {
-
     z-index: 40;
     background-color: #f4f4f4;
     height: 40px;
@@ -152,7 +148,6 @@
 
 
 @media (max-width: 762px) {
-
     .promotion-img {
         width: 345px;
         height: 208px;
