@@ -168,10 +168,9 @@
         display: flex;
         background: #ffffff;
         flex-direction: row;
-        padding-top: 18px;
+        padding-top: 0px;
         padding-bottom: 15px;
-        margin-left: 168px;
-        margin-left: 5px;
+        margin-left: 2px;
         border-top-right-radius: 5px;
     }
 
@@ -185,7 +184,7 @@
         margin-left: 20px;
         overflow-x: auto;
         overflow-y: hidden;
-        padding-top: 20px;
+        padding-top: 18px;
     }
 
     .card-promotion {
@@ -210,7 +209,17 @@
     }
 
     .my-promotion {
-        display: none;
+    color: #000;
+    font-size: 22px;
+    width: 100px;
+    font-weight: 500;
+    height: 25px;
+    padding: 18px 0px 0px 0px;
+    text-align: center;
+    margin: 0px 0px 0px 20px;
+    font-family: 'Hind', sans-serif;
+    line-height: 24px;
+    text-align: left;
     }
 
     .information-cont{
@@ -237,6 +246,5 @@
         margin-bottom: 0px;
         color: #000;
         font-family: hind, simhei, verdana, Helvetica, sans-serif;
-
     }
 }

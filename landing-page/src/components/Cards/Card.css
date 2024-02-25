@@ -8,13 +8,12 @@
     background: #f4f4f4;
     padding-bottom: 25px;
     padding-top: 18px;
-    padding-left: 10px;
+    padding-left: 0px;
     margin: auto;
 }
 
 .card-container {
     padding: 10px;
-    left: 30px;
     width: 192px;
     height: 205px;
     border-bottom: 1px solid #eaeaea;

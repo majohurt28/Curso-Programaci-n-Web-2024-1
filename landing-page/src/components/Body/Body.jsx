@@ -18,8 +18,8 @@ export function Body(props){
             <Schedule></Schedule>
             <Cardlist></Cardlist>
             <NewwebtoonList></NewwebtoonList>
+            <h1 className="trending-thriller"> Trending Thriller🔥</h1>
             <Thriller></Thriller>
-
             <h1 className="my-promotion"> PROMOTION </h1>
             <Promotionsection></Promotionsection>
         </main>

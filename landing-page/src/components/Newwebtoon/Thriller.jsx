@@ -46,9 +46,7 @@ const Webtoonthriller = [
 const Thriller = () => {
     const renderThriller = () => {
         return Webtoonthriller.map((value, index) => (
-
             <div className="card-container3" key={value.key}>
-
                 <h1>{value.name}</h1>
                 <img className="up-icon3" src={up}></img>
                 <h1></h1>
@@ -63,24 +61,20 @@ const Thriller = () => {
         ))
     }
 
-
-
     return (
-        <div style={{}} className="cards-container3">
-
-            <div className="thriller-info" style={{}} >
-                <div className="info-genre3">
-                    <strong>Thriller
-                        <em className="em-info" > | </em>
-                    </strong>
-                    <p>Chill, Shiver and Shudder</p>
+        <div className="thriller-cont">
+            <div style={{}} className="cards-container3">
+                <div className="thriller-info" style={{}} >
+                    <div className="info-genre3">
+                        <strong>Thriller
+                            <em className="em-info" > | </em>
+                        </strong>
+                        <p>Chill, Shiver and Shudder</p>
+                    </div>
                 </div>
+
+                {renderThriller()}
             </div>
-            <h1 className="trending-thriller"> Trending Thriller🔥</h1>
-
-            {renderThriller()}
-
-
         </div>
     )
 }

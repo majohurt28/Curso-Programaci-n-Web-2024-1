@@ -30,7 +30,6 @@ li {
 li:hover {
   color: #00dc64;
   font-weight: 550;
-
 }
 
 .li-style {
@@ -40,7 +39,6 @@ li:hover {
   margin-left: 10px;
   padding-left: 20px;
   margin-top: 40px;
-
 }
 
 /** Buttons container, h1 and h2  */
@@ -117,7 +115,6 @@ button {
   margin-left: 42px;
 }
 
-
 .Background {
   width: 0px;
 }
@@ -137,7 +134,6 @@ button {
   height: 19px;
   margin-right: 7px;
   padding-top: 3px;
-
 }
 
 /** Len Icon and burguer menu */
@@ -166,7 +162,6 @@ button {
 }
 
 
-
 /** Mobile Design*/
 
 @media (max-width: 762px) {
@@ -187,13 +182,21 @@ button {
   .publish-button {
     display: none;
   }
-
   .user-button {
     display: none;
   }
 }
 
 @media (max-width: 762px) {
+/*   .button-container{
+width: 150px;
+    height: 90px;
+    margin-left: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-Top: 16px;
+
+  } */
   .button-container h2 {
     display: none;
   }
@@ -211,32 +214,48 @@ button {
 
 /**Burguer menu**/
 
-.hamburger-menu{
-  position: relative;
-  left: 114px;
+
+.hamburger-menu {
+  position: fixed;
+  left: 330px;
   border-radius: 5px;
   background-color: #ffffff96;
   border: 1.5px solid #ffffff96;
   height: 40px;
   width: 45px;
+  margin: 0px 0px 0px 0px;
 }
 
-.hamburger-menu:hover{
-  background-color: #ffffffbc;
+
+.hamburger-menu:hover {
+  background-color: #ffff;
 }
 
-.mobile-design{
-  background-color: #ffffff;
+.mobile-design {
+  background-color: #f4f4f4;
   position: relative;
-  top: 20px;
-  left: -30px;
+  top: 0px;
+  right: 137px;
+  width: 230px;
+  height: 360px;
+  border-bottom: 2px solid #eaeaea;
 }
+
+.mobile-design ul {
+  padding-left: 20px;
+  margin-top: 30PX;
+}
+
+.mobile-design ul li {
+  font-size: 18px;
+  font-family: hind, simhei, verdana, Helvetica, sans-serif;
+  font-weight: bolder;
+  margin-bottom: 10PX;
+}
+
 
 @media (min-width: 600px) {
-.hamburger-menu{
-  display: none;
-}}
-
-
-
-
+  .hamburger-menu {
+    display: none;
+  }
+}

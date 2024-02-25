@@ -44,14 +44,13 @@ export function Header(props) {
 
       </div>
 
-
       {
         showMenu
           ? (
             <nav className='mobile-design'>
               <ul className='btn-container'>
                 {
-                  LINKS.map(({ id, text }) => {
+                  LINKS.map(({ id,image, text }) => {
                     return (
                       <li className='content-btn' key={id}>{text}</li>
                     )
