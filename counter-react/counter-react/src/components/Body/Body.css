@@ -1,32 +1,32 @@
 .counter-global{
     display: flex;
-    background: #ffff;
+    background: #312831;
     flex-direction: column;
+    background-image: url("https://i.pinimg.com/564x/26/f8/9f/26f89f057175399d658649d909362a44.jpg");
 }
 
 .counter-cont{
     display: flex;
-    background: #4e4c71;
+    background: #31aad3    ;
     flex-direction: row;
     width: 400px;
-    height: 140px;
+    height: 120px;
     margin: auto;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 
 .counter-tittle{
-    color: #d41f77 ;
-    background: #f4f4f4;
+    color: #000;
+    background: #fff;
     font-size: 26px;
     font-weight: 500;
     height: 40px;
     line-height: 24px;
     text-align: center;
-    width: 1170px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
     font-family: 'Hind', sans-serif;
-    padding: 36px 10% 0px 10%;
+    padding: 25px 0px 0px 0px;
     border-bottom: 3px solid #eaeaea;
 }
 
@@ -35,29 +35,30 @@
     display: flex;
     flex-direction: row;
     margin: auto;
+    align-items: center;
 }
 
 .decrease-btn{
-    background-color: #a06da9;
+    background-color:#287d99   ;
     color: white;
     font-size: 20px;
     border-radius: 10px;
     font-family: hind, simhei, verdana, Helvetica, sans-serif;
-    margin: 0px 30px 0px 65px;
-    height: 100px;
+    margin: 0px 30px 0px 52px;
+    height: 80px;
     border-top: 3px solid #eaeaea;
     border-left: 3px solid #eaeaea;
     justify-content: center;
 }
 
 .increase-btn{
-    background-color: #a06da9;
+    background-color: #287d99  ;
     color: white;
     font-size: 20px;
     border-radius: 10px;
     font-family: hind, simhei, verdana, Helvetica, sans-serif;
     margin-left: 30px;
-    height: 100px;
+    height: 80px;
     border-top: 3px solid #eaeaea;
     border-left: 3px solid #eaeaea;
 }
@@ -71,24 +72,43 @@
     width: 400px;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 3px solid #eaeaea;
+    border-left: 3px solid #eaeaea;
+}
+
+.reset-btn:hover{
+    background-color: #d41f77;
+    font-size: 21px;
 }
 
 .card-character{
-    width: 100%;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+    background: #ffff;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 
 }
 .card-character p{
-    color: #000;
-    font-size: 20px;
+    color: #ffff;
+    background-color: #000;
+    font-size: 22px;
     width: 100%;
     margin: auto;
     text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
     font-family: hind, simhei, verdana, Helvetica, sans-serif;
 }
 
 .monster-character{
-    width: auto;
-    height: 300px;
-    margin-left: 44%;
+    width: 185px;
+    height: 310px;
+    margin-left: 100px;
     padding: 10px;
 }
