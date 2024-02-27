@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import './Body.css'
 import { Monstercards } from '../../const/Links'
 import { CounterComponent } from "../Counter/Counter";
@@ -13,17 +13,17 @@ export function Body() {
         return Monstercards[data];
     };
 
-    const incrementCounter = () => {
+    const incrementCounter = (e) => {
         setCount(count + 1);
     };
 
-    const decrementCounter = () => {
+    const decrementCounter = (e) => {
         if (count > 0) {
             setCount(count - 1);
         }
     };
 
-    const resetCounter = () => {
+    const resetCounter = (e) => {
         setCount(startCount);
     };
 
@@ -58,18 +58,14 @@ export function Body() {
 
                 <div className="counter-cont">
                     <div className="btn-container">
-                        <Button className={Decreasebtn.className} clickFunction={Decreasebtn.OnClickFunction} text={Decreasebtn.text} />
-
-                        {/* <button className="decrease-btn" onClick={decrementCounter} type="substract">Decrease</button> */}
+                        <Button className={Decreasebtn.className} OnClickFunction={Decreasebtn.OnClickFunction} text={Decreasebtn.text} />
                         <CounterComponent count={count}></CounterComponent>
-                        <Button className={Increasebtn.className} clickFunction={Increasebtn.OnClickFunction} text={Increasebtn.text} />
-                        {/*  <button className="increase-btn" onClick={incrementCounter} type="add">Increase</button> */}
+                        <Button className={Increasebtn.className} OnClickFunction={Increasebtn.OnClickFunction} text={Increasebtn.text} />
                     </div>
                 </div>
 
+                <Button className={Resetbtn.className} OnClickFunction={Resetbtn.OnClickFunction} text={Resetbtn.text} />
 
-
-                <button className="reset-btn" onClick={resetCounter} type="reset">Reset</button>
             </div>
         </main>
     )
