@@ -1,0 +1,54 @@
+header {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-cont {
+    background-color: #322f2f;
+    display: flex;
+    justify-items: center;
+}
+
+.monster-logo {
+    width: 230px;
+    height: 50px;
+    margin: auto;
+}
+
+.banner-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.info-cont{
+    z-index: 20;
+    color: white;
+    background-color: #000;
+    border-radius: 10px;
+    margin: 90px 0px 0px 50px;
+    padding: 0px 10px 0px 10px;
+}
+
+.info-cont h1 {
+    width: 430px;
+    font-size: 28px;
+    font-family: hind, simhei, verdana, Helvetica, sans-serif;
+}
+
+.info-cont h2 {
+    width: 430px;
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 14px;
+    line-height: 1.35rem;
+}
+
+.monster-banner {
+    z-index: 10;
+    width: 100%;
+    height: 430px;
+    margin-top: -288px;
+    border-bottom: 3px solid #eaeaea;
+}
