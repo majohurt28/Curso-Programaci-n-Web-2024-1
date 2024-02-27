@@ -1,13 +1,13 @@
-.counter-global{
+.counter-global {
     display: flex;
     background: #312831;
     flex-direction: column;
     background-image: url("https://i.pinimg.com/564x/26/f8/9f/26f89f057175399d658649d909362a44.jpg");
 }
 
-.counter-cont{
+.counter-cont {
     display: flex;
-    background: #31aad3    ;
+    background: #31aad3;
     flex-direction: row;
     width: 400px;
     height: 120px;
@@ -15,7 +15,7 @@
     border-radius: 5px;
 }
 
-.counter-tittle{
+.counter-tittle {
     color: #000;
     background: #fff;
     font-size: 26px;
@@ -30,7 +30,7 @@
     border-bottom: 3px solid #eaeaea;
 }
 
-.btn-container{
+.btn-container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -38,8 +38,8 @@
     align-items: center;
 }
 
-.decrease-btn{
-    background-color:#287d99   ;
+.decrease-btn {
+    background-color: #287d99;
     color: white;
     font-size: 20px;
     border-radius: 10px;
@@ -51,8 +51,8 @@
     justify-content: center;
 }
 
-.increase-btn{
-    background-color: #287d99  ;
+.increase-btn {
+    background-color: #287d99;
     color: white;
     font-size: 20px;
     border-radius: 10px;
@@ -63,7 +63,7 @@
     border-left: 3px solid #eaeaea;
 }
 
-.reset-btn{
+.reset-btn {
     background-color: #a06da9;
     color: white;
     font-size: 20px;
@@ -77,12 +77,12 @@
     border-left: 3px solid #eaeaea;
 }
 
-.reset-btn:hover{
+.reset-btn:hover {
     background-color: #d41f77;
     font-size: 21px;
 }
 
-.card-character{
+.card-character {
     width: 400px;
     margin: auto;
     display: flex;
@@ -94,7 +94,8 @@
 
 
 }
-.card-character p{
+
+.card-character p {
     color: #ffff;
     background-color: #000;
     font-size: 22px;
@@ -106,7 +107,7 @@
     font-family: hind, simhei, verdana, Helvetica, sans-serif;
 }
 
-.monster-character{
+.monster-character {
     width: 185px;
     height: 310px;
     margin-left: 100px;
