@@ -1,0 +1,14 @@
+.head{
+    background-color: rgb(125, 119, 228);
+    width: 195vh;
+    margin-left: -100px;
+    height: 100px;
+   margin-top: -20px;
+    box-shadow: 0px 50px rgba(140, 160, 172, 0.316);
+    position: absolute;
+    z-index: 7;
+}
+
+.des{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
