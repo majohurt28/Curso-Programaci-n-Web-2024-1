@@ -1,15 +1,11 @@
 import './Header.css'
-export function Header(props){
-    
-    
-    return(
+import { Form } from '../Form/Form'
 
-        
-        <header className='head'>
-            
-            <h2 className= 'des' >Date with V1 to do list</h2>
-           
-    
-            </header>
+export function Header(props){
+    return(
+        <header >
+
+        <Form></Form>
+        </header>
     )
 }

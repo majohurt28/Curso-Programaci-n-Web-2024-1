@@ -1,7 +1,8 @@
 import { Header, Body, Footer } from './components/index'
 
-export default function App() { 
-    return ( 
+/**Trabajo presentado por María José Hurtado y Nicolás Rodriguez**/
+export default function App() {
+    return (
         <>
             <Header/>
             <Body/>
