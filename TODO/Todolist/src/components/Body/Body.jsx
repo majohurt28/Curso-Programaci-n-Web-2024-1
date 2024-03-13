@@ -1,7 +1,6 @@
 
 import { useState } from "react"
 import './Body.css'
-import { Form } from "../Form/Form";
 
 export function Body(props) {
     const [tasks, setTasks] = useState([]);
@@ -32,7 +31,6 @@ export function Body(props) {
 
     return (
         <div>
-            <h1>To-Do List</h1>
             <input
                 type="text"
                 value={inputValue}
