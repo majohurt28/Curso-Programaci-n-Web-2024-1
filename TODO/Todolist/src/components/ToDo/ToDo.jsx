@@ -1,6 +1,6 @@
 import './ToDo.css'
 
-export const ToDo = ({ tasks }) => {
+export const ToDo = ({ tasks, taskComplete, id }) => {
     const { title, completed } = tasks
     return (
         <div className='todo-cont'>
@@ -9,10 +9,10 @@ export const ToDo = ({ tasks }) => {
                 completed ? (
                     //**If the task is completed, change the span for a check icon */
                     <div className='check-container'>
-                        <img className='check-icon' src="../../../public/check-icon.svg" alt='Check icon'></img>
+                        <img className='check-icon' onClick={() => taskComplete(id)} src="../../../public/check-icon.svg" alt='Check icon'></img>
                     </div>
                 ) : (
-                    <span className='span-todo'></span>
+                    <span className='span-todo' onClick={() => taskComplete(id)}></span>
                     )
                 }
                 <p className={'title-todo' + (completed && "line-through")}>{title} </p>

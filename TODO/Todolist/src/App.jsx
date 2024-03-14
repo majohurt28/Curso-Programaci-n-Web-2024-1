@@ -18,9 +18,9 @@ export default function App() {
     ])
 
     const createTask = (title) => {
-        const lastId = tasks.length > 0 ? tasks(tasks.length -1).id : 1;
+        /* const lastId = tasks.length > 0 ? tasks(tasks.length -1).id : 1; */
         const newTask = {
-            id: lastId + 1,
+            id: crypto.randomUUID(),
             title,
             completed: false
         }
@@ -28,8 +28,18 @@ export default function App() {
     const tasksList = [...tasks]
     tasksList.push(newTask);
     setTasks(tasksList);
-
     }
+
+    const taskComplete = (id) =>{
+        const updateList = tasks.map(task => {
+            if (task.id === id){
+                return {... task, completed: ! task.completed}
+            }
+        return task
+        })
+        setTasks (updateList)
+    }
+
 
 
     return (
@@ -37,7 +47,7 @@ export default function App() {
             <Header />
             <Form createTask={createTask}/>
             <Filter />
-            <TaskList tasks={tasks} />
+            <TaskList tasks={tasks} taskComplete={taskComplete}/>
         </div>
     );
 }
