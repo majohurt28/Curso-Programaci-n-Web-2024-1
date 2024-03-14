@@ -6,19 +6,24 @@ export default function App() {
     const [tasks, setTasks] = useState([
         {
         id: crypto.randomUUID(),
-        tittle: '...',
-        completed: 'false',
+        title: 'hola',
+        completed: false
 
-        },
+        },{
+            id: crypto.randomUUID(),
+            title: 'hola',
+            completed: false
 
+        }
     ])
+
+
     return (
         <div className='app-container'>
             <Header/>
-            <Form></Form>
-            <Filter></Filter>
-            <TaskList tasks={tasks}>
-            </TaskList>
+            <Form/>
+            <Filter/>
+            <TaskList tasks={tasks}/>
         </div>
-    )
+    );
 }
