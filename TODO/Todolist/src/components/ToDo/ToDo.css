@@ -15,8 +15,9 @@
 }
 
 .span-todo {
-    border: rgb(205, 103, 103);
-    background-color: blue;
+    border-width: thick;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 25px;
     height: 23px;
     border-radius: 50%;

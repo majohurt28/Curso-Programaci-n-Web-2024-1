@@ -1,7 +1,7 @@
 import './ToDo.css'
 
 export const ToDo = ({ tasks }) => {
-    const { tittle, completed } = tasks
+    const { title, completed } = tasks
     return (
         <div className='todo-cont'>
             <div className='task-items'>
@@ -15,7 +15,7 @@ export const ToDo = ({ tasks }) => {
                     <span className='span-todo'></span>
                     )
                 }
-                <p className={'title-todo' + (completed && "line-through")}>{tittle} </p>
+                <p className={'title-todo' + (completed && "line-through")}>{title} </p>
             </div>
             <img className='close-icon' src="../../../public/trasch-icon.svg" alt='Close icon'></img>
         </div>
