@@ -1,20 +1,12 @@
 import './Filter.css'
-import { FilterContainer, CountTask, ButtonContainer, ButtonFilter } from './FilterContainer'
+//import { FilterContainer, CountTask, ButtonContainer, ButtonFilter } from './FilterContainer'
 
-export function Filter() {
+export function Filter(props) {
+    const { id, name, filter, click, label } = props
     return (
         <div className='filter-cont' >
-            <FilterContainer>
-                <ButtonContainer>
-                    <ButtonFilter action={() => { }} active="All" filter="All" />
-                    <ButtonFilter action={() => { }} active="All" filter="Completed" />
-                    <ButtonFilter action={() => { }} active="All" filter="Pending" />
-                </ButtonContainer>
-                <div className='count-clear'>
-                    <CountTask />
-                    <button className='delete-tasks'>Clear all</button>
-                </div>
-            </FilterContainer>
+            <input type='radio' id={id} name={name} checked={filter === id} onChange={() => click(id)} />
+            <label htmlFor={id}>{label}</label>
         </div>
     )
 }

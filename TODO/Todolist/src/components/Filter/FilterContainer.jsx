@@ -1,32 +1,13 @@
 import './Filter.css'
+import { Filter } from '../index'
 
-const FilterContainer = ({ children }) => {
-    return (
-        <div className='filters-cont' >{children}
+export function FilterContainer(props){
+    const {filter, setFilter} = props
+    return(
+        <div className='filter-container'>
+                <Filter id='all' name='show' filter={filter} click={setFilter} label='All' />
+                <Filter id='completed' name='show' filter={filter} click={setFilter} label='Completed' />
+                <Filter id='pending' name='show' filter={filter} click={setFilter} label='Pending' />
         </div>
     )
 }
-
-const CountTask = ({ total = 0 }) => {
-    return (
-        <p>{total} Taks left</p>
-    )
-}
-
-const ButtonContainer = ({ children }) => {
-    return (
-        <div className='btn-container'>
-            {children}
-        </div>
-    )
-}
-
-const ButtonFilter = ({ action, active, filter }) => {
-    return (
-        <button className={`text: white` + (active.toLowerCase().includes(filter.toLowerCase()) ? 'text-blue-400' : 'text-gray-400')}>
-            {filter}
-        </button>
-    )
-}
-
-export { FilterContainer, CountTask, ButtonContainer, ButtonFilter };

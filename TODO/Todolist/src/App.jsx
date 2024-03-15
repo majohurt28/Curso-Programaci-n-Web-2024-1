@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Header, Body, Footer, TaskList, Form, ToDo, Filter } from './components/index'
+import { Header, Body, Footer, TaskList, Form, ToDo, Filter, FilterContainer } from './components/index'
 
 /**Trabajo presentado por María José Hurtado y Nicolás Rodriguez**/
 export default function App() {
@@ -17,6 +17,15 @@ export default function App() {
         }
     ])
 
+    const [filter, setFilter] = useState('all')
+
+    const filteredTodos = tasks.filter((todo) => {
+        if (filter === 'all') return true
+        if (filter === 'completed') return todo.completed
+        if (filter === 'pending') return !todo.completed
+        return true
+    })
+
     const createTask = (title) => {
         /* const lastId = tasks.length > 0 ? tasks(tasks.length -1).id : 1; */
         const newTask = {
@@ -30,14 +39,19 @@ export default function App() {
     setTasks(tasksList);
     }
 
-    const taskComplete = (id) =>{
-        const updateList = tasks.map(task => {
-            if (task.id === id){
-                return {... task, completed: ! task.completed}
+    function deleteTask(id) {
+        setTasks(tasks.filter(task => task.id !== id))
+    }
+
+    const taskComplete = (id,checked) =>{
+        setTasks(tasks.map(tasks => {
+            if (tasks.id === id){
+                return {... tasks, completed: checked}
+            }else{
+                return tasks
             }
-        return task
-        })
-        setTasks (updateList)
+        }))
+
     }
 
 
@@ -46,8 +60,14 @@ export default function App() {
         <div className='app-container'>
             <Header />
             <Form createTask={createTask}/>
-            <Filter />
-            <TaskList tasks={tasks} taskComplete={taskComplete}/>
+            <FilterContainer filter={filter} setFilter={setFilter}/>
+
+            {
+                tasks.length > 0 ?
+                <TaskList tasks={filteredTodos} taskComplete={taskComplete} deleteTask={deleteTask}/>
+                :
+                <h2>Add tasks</h2>
+      }
         </div>
     );
 }

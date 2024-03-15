@@ -1,23 +1,22 @@
 import './ToDo.css'
 
-export const ToDo = ({ tasks, taskComplete, id }) => {
+export const ToDo = ({ tasks, taskComplete,deleteTask }) => {
     const { title, completed } = tasks
+
+    function handleChange({target}){
+        taskComplete(tasks.id, target.checked)
+    }
+
     return (
         <div className='todo-cont'>
             <div className='task-items'>
-                {
-                completed ? (
-                    //**If the task is completed, change the span for a check icon */
-                    <div className='check-container'>
-                        <img className='check-icon' onClick={() => taskComplete(id)} src="../../../public/check-icon.svg" alt='Check icon'></img>
-                    </div>
-                ) : (
-                    <span className='span-todo' onClick={() => taskComplete(id)}></span>
-                    )
-                }
+            <input type='checkbox' className='check-todo' checked={tasks.completed} onChange={handleChange}></input>
+
                 <p className={'title-todo' + (completed && "line-through")}>{title} </p>
             </div>
-            <img className='close-icon' src="../../../public/trasch-icon.svg" alt='Close icon'></img>
+            <button onClick={() => deleteTask(tasks.id)}>
+                X
+            </button>
         </div>
     )
 }
