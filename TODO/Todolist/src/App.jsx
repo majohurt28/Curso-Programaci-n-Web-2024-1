@@ -1,20 +1,14 @@
 import { useState } from 'react'
-import { Header, Body, Footer, TaskList, Form, ToDo, Filter, FilterContainer } from './components/index'
+import { Header, Footer, TaskList, Form, ToDo, FilterContainer } from './components/index'
 
 /**Trabajo presentado por María José Hurtado y Nicolás Rodriguez**/
 export default function App() {
     const [tasks, setTasks] = useState([
         {
             id: crypto.randomUUID(),
-            title: 'hola',
+            title: 'Homework',
             completed: false
-
-        }, {
-            id: crypto.randomUUID(),
-            title: 'hola',
-            completed: false
-
-        }
+        },
     ])
 
     const [filter, setFilter] = useState('all')
@@ -34,40 +28,53 @@ export default function App() {
             completed: false
         }
 
-    const tasksList = [...tasks]
-    tasksList.push(newTask);
-    setTasks(tasksList);
+        const tasksList = [...tasks]
+        tasksList.push(newTask);
+        setTasks(tasksList);
     }
 
     function deleteTask(id) {
         setTasks(tasks.filter(task => task.id !== id))
     }
 
-    const taskComplete = (id,checked) =>{
+    const taskComplete = (id, checked) => {
         setTasks(tasks.map(tasks => {
-            if (tasks.id === id){
-                return {... tasks, completed: checked}
-            }else{
+            if (tasks.id === id) {
+                return { ...tasks, completed: checked }
+            } else {
                 return tasks
             }
-        }))
-
+        }
+        ))
     }
 
+    const deleteAllTask = () => {
+        setTasks([]);
+    };
 
+    const tasksNoun = tasks.length !== 1 ? "tasks" : "task";
+    const headingText = `${tasks.length} ${tasksNoun} remaining`;
 
     return (
         <div className='app-container'>
             <Header />
-            <Form createTask={createTask}/>
-            <FilterContainer filter={filter} setFilter={setFilter}/>
+            <Form createTask={createTask} />
+            <FilterContainer filter={filter} setFilter={setFilter} />
 
-            {
-                tasks.length > 0 ?
-                <TaskList tasks={filteredTodos} taskComplete={taskComplete} deleteTask={deleteTask}/>
-                :
-                <h2>Add tasks</h2>
-      }
+            {tasks.length > 0 ?
+                <TaskList
+                    tasks={filteredTodos}
+                    taskComplete={taskComplete}
+                    deleteTask={deleteTask} />
+                : <h2>Add tasks</h2>
+            }
+            <h2 id="list-heading">{headingText}</h2>
+            <button onClick={deleteAllTask}>Delete All</button>
+            {/* <Footer
+                tasks={tasks}
+                deleteAllTask={deleteAllTask}
+                headingText={headingText}
+                /> */}
         </div>
     );
 }
