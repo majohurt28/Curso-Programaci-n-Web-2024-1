@@ -1,17 +1,25 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Header, Footer, TaskList, Form, ToDo, FilterContainer } from './components/index'
+
+let initTask = []
+const lclStrg = JSON.parse(window.localStorage.getItem('tasks'))
+if (lclStrg !== null) {
+    initTask = lclStrg
+}else{
+    alert('there is no local storage')
+}
 
 /**Trabajo presentado por María José Hurtado y Nicolás Rodriguez**/
 export default function App() {
-    const [tasks, setTasks] = useState([
-        {
-            id: crypto.randomUUID(),
-            title: 'Homework',
-            completed: false
-        },
-    ])
+    const [tasks, setTasks] = useState(initTask)
+
+    const [text, setText] = useState('')
 
     const [filter, setFilter] = useState('all')
+
+    useEffect(() =>{
+        window.localStorage.setItem('tasks', JSON.stringify(tasks))
+    }, [tasks])
 
     const filteredTodos = tasks.filter((todo) => {
         if (filter === 'all') return true
@@ -31,6 +39,7 @@ export default function App() {
         const tasksList = [...tasks]
         tasksList.push(newTask);
         setTasks(tasksList);
+        setText('')
     }
 
     function deleteTask(id) {
@@ -48,17 +57,16 @@ export default function App() {
         ))
     }
 
-    const deleteAllTask = () => {
-        setTasks([]);
+    const deleteCompletedTasks = () => {
+        setTasks(tasks.filter(task => task.completed !== true))
     };
 
-    const tasksNoun = tasks.length !== 1 ? "tasks" : "task";
-    const headingText = `${tasks.length} ${tasksNoun} remaining`;
+
 
     return (
         <div className='app-container'>
             <Header />
-            <Form createTask={createTask} />
+            <Form createTask={createTask} text={text} setText={setText}/>
             <FilterContainer filter={filter} setFilter={setFilter} />
 
             {tasks.length > 0 ?
@@ -68,12 +76,11 @@ export default function App() {
                     deleteTask={deleteTask} />
                 : <h2>Add tasks</h2>
             }
-            <h2 id="list-heading">{headingText}</h2>
-            <button onClick={deleteAllTask}>Delete All</button>
+            <Footer tasks={tasks} deleteCompletedTasks={deleteCompletedTasks} />
             {/* <Footer
                 tasks={tasks}
-                deleteAllTask={deleteAllTask}
-                headingText={headingText}
+                deleteCompletedTasks={deleteCompletedTasks}
+                countText={countText}
                 /> */}
         </div>
     );

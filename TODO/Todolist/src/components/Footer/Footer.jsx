@@ -1,12 +1,15 @@
 import './Footer.css'
 
-export function Footer(
-    tasks, deleteAllTask, headingText) {
+export function Footer(props) {
+    const {tasks, deleteCompletedTasks}=props
+
+    const taskNum = tasks.length !== 1 ? "tasks" : "task";
+    const taskCount=tasks.length
 
     return (
         <footer className='footer' >
-            <h2 id="list-heading">{headingText}</h2>
-            <button onClick={deleteAllTask}>Delete All</button>
+            <p id="list-heading"> {taskCount} {taskNum} remaining</p>
+            <button onClick={deleteCompletedTasks}>Delete Completed</button>
         </footer>
     )
 }

@@ -1,24 +1,22 @@
 import { useState } from "react"
 
-export const Form = ({ createTask }) => {
+export const Form = (props) => {
+    const { createTask, text, setText }= props
 
-    const [title, setTitle] = useState('')
+
 
     const handleChange = (e) => {
-        if (e.key.toLowerCase() === 'enter') {
-            createTask(title)
-            setTitle('')
-        }
+        e.preventDefault()
+        createTask(text)
     }
 
     return (
-        <div className='form-cont' >
-            <input id="form-input" type="text" placeholder="Enter task..." value={title}
-                onChange={e => setTitle(e.target.value)}
-                onKeyDown={e => handleChange(e)} />
+        <form className='form-cont' onSubmit={handleChange}>
+            <input id="form-input" type="text" placeholder="Enter task..." value={text}
+                onChange={e => setText(e.target.value)} />
             <button className="add-btn" type='submit' >
                 Add Task
             </button>
-        </div>
+        </form>
     )
 }
