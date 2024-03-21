@@ -10,6 +10,7 @@ export function Footer() {
     tasks.forEach((e) => {
         if (e.completed === true) {
       compTasks++
+      //**Se suma a estado inicial de compTask */
         }
     })
 
