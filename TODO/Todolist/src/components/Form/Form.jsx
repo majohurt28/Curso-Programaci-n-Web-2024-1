@@ -15,7 +15,7 @@ export const Form = (props) => {
             <input id="form-input" type="text" placeholder="Enter task..." value={text}
                 onChange={e => setText(e.target.value)} />
             <button className="add-btn" type='submit' >
-                Add Task
+                <img src= "../../../../../public/plus-icon.svg"/>
             </button>
         </form>
     )

@@ -1,11 +1,13 @@
 import React from 'react'
-import { createRoot } from 'react-dom/client'
+import ReactDOM from 'react-dom/client'
+import {TodoContextProvider} from './context/TodoContextProvider'
 import './style.css'
-
 import App from './App'
 
-const rootElement = document.getElementById('app')
-const root = createRoot(rootElement)
-
-root.render(<App />) // use <ComponentNAme />
-console.log(rootElement);
+ReactDOM.createRoot(document.getElementById('app')).render(
+    <React.StrictMode>
+        <TodoContextProvider>
+            <App/>
+        </TodoContextProvider>
+    </React.StrictMode>
+)

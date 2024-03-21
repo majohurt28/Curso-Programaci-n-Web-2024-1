@@ -1,7 +1,8 @@
 import './Footer.css'
+import { UseTodolist } from '../../Hook/useTodolist';
 
-export function Footer(props) {
-    const {tasks, deleteCompletedTasks}=props
+export function Footer() {
+    const {tasks,deleteCompletedTasks} = UseTodolist()
 
     const taskNum = tasks.length !== 1 ? "tasks" : "task";
     const taskCount=tasks.length
