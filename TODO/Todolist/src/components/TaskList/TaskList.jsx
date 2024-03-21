@@ -1,10 +1,13 @@
 import './TaskList.css'
+import { UseTodolist } from '../../Hook/useTodolist';
 import { ToDo } from '../ToDo/ToDo'
 
-export const TaskList = ({ tasks, taskComplete, deleteTask }) => {
+export const TaskList = () => {
+    const {filteredTodos, taskComplete, deleteTask}= UseTodolist()
+
     return (
         <div className='task-cont'>
-            {tasks.map(tasks => {
+            {filteredTodos.map(tasks => {
                 return (
                     <ToDo key={tasks.id}
                         tasks={tasks}

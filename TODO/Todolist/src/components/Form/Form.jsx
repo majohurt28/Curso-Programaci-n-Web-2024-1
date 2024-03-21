@@ -1,7 +1,8 @@
 import { useState } from "react"
+import { UseTodolist } from '../../Hook/useTodolist';
 
-export const Form = (props) => {
-    const { createTask, text, setText }= props
+export const Form = () => {
+    const { createTask, text, setText }= UseTodolist()
 
 
 

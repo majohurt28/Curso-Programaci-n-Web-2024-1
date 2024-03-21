@@ -7,7 +7,7 @@ import {UseTodolist} from './Hook/useTodolist';
 export default function App() {
     // const {tasks, setTasks, text, setText, filter, setFilter, filteredTodos, createTask, deleteTask, taskComplete , deleteCompletedTasks} = UseTodolist()
 
-    const {tasks} = UseTodolist()
+    const {tasks,filteredTodos,deleteTask,taskComplete} = UseTodolist()
 
     return (
         <div className='app-container'>
@@ -16,18 +16,10 @@ export default function App() {
             <FilterContainer />
 
             {tasks.length > 0 ?
-                <TaskList
-                    tasks={filteredTodos}
-                    taskComplete={taskComplete}
-                    deleteTask={deleteTask} />
+                <TaskList />
                 : <h2>Add tasks</h2>
             }
             <Footer />
-            {/* <Footer
-                tasks={tasks}
-                deleteCompletedTasks={deleteCompletedTasks}
-                countText={countText}
-                /> */}
         </div>
     );
 }

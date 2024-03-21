@@ -29,6 +29,9 @@ export  function TodoContextProvider({children}) {
     })
 
     const createTask = (title) => {
+        if (text === '') {
+            return alert('Please, give a name to your task before trying to add it')
+          }
         /* const lastId = tasks.length > 0 ? tasks(tasks.length -1).id : 1; */
         const newTask = {
             id: crypto.randomUUID(),
