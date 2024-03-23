@@ -1,5 +1,6 @@
 .todo-cont {
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgba(0.1, 0.1, 0, 0.1);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -11,7 +12,8 @@
     align-items: center;
     justify-content: center;
     margin-left: 10px;
-    color: black;
+    height: 80px;
+    color: #6D717A;
 }
 
 .span-todo {
@@ -30,7 +32,16 @@
     cursor: pointer;
 }
 
+.check-todo{
+
+    width: 26px;
+    height: 26px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
 .check-container{
     cursor: pointer;
-
 }

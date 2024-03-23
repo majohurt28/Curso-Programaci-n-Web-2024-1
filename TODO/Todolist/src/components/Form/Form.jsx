@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { UseTodolist } from '../../Hook/useTodolist';
+import './Forms.css'
+
 
 export const Form = () => {
     const { createTask, text, setText }= UseTodolist()
@@ -12,11 +14,11 @@ export const Form = () => {
     }
 
     return (
-        <form className='form-cont' onSubmit={handleChange}>
-            <input id="form-input" type="text" placeholder="Enter task..." value={text}
+        <form onSubmit={handleChange}>
+            <input id="form-input" type="text" placeholder=" Enter task..." value={text}
                 onChange={e => setText(e.target.value)} />
             <button className="add-btn" type='submit' >
-                <img src= "../../../../../public/plus-icon.svg"/>
+                <img className="plus-icon" src= "../../../../../public/plus-icon.svg"/>
             </button>
         </form>
     )

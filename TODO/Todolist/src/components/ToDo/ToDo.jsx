@@ -15,10 +15,7 @@ export const ToDo = ({ tasks, taskComplete, deleteTask }) => {
                     checked={tasks.completed}
                     onChange={handleChange}>
                 </input>
-                {/* <p className={'title-todo' + (completed && "line-through")}>{title}</p> */}
-                {
-                    tasks.completed ? <p style={{ textDecorationLine: 'line-through', color: 'black' }}>{tasks.title}</p> : <p>{tasks.title}</p>
-                }
+                {tasks.completed ? <p className='task-title' style={{ textDecorationLine: 'line-through', color: '#91C836' }}>{tasks.title}</p> : <p>{tasks.title}</p>}
             </div>
             <button onClick={() => deleteTask(tasks.id)}>
                 X
