@@ -5,5 +5,3 @@ export * from './TaskList/TaskList'
 export * from './ToDo/ToDo'
 export * from './Footer/Footer'
 export * from './Filter/FilterContainer'
-
-

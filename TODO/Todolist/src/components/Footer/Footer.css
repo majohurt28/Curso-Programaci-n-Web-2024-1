@@ -16,5 +16,9 @@ footer button{
         height: 40px;
         border-radius: 15px;
 
+} 
+
+footer p{
+        font-weight: bolder;
 }
 

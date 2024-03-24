@@ -34,10 +34,16 @@
 }
 
 .deleteitem-btn{
-    width: 20px;
+    width: 26px;
+    height: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0px;
+    margin-top: -1px;
+    margin-right: -100px;
+    background-color: #ECF1F7;
+    font-weight: bolder;
 }
 .delete-icon{
     color: antiquewhite;
