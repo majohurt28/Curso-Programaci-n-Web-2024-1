@@ -28,12 +28,20 @@ a:hover {
   top: 0px;
 }
 
+.add-tasks{
+  background-color: #ECF1F7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #32315B;
+
+}
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
 }
 
 h1 {

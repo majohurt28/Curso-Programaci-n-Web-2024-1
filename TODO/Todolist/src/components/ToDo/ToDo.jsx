@@ -17,8 +17,8 @@ export const ToDo = ({ tasks, taskComplete, deleteTask }) => {
                 </input>
                 {tasks.completed ? <p className='task-title' style={{ textDecorationLine: 'line-through', color: '#91C836' }}>{tasks.title}</p> : <p>{tasks.title}</p>}
             </div>
-            <button onClick={() => deleteTask(tasks.id)}>
-                X
+            <button className='deleteitem-btn' onClick={() => deleteTask(tasks.id)}>
+                <img className='delete-icon' src='../../../public/trasch-icon.svg' />
             </button>
         </div>
     )

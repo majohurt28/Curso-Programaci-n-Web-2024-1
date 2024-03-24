@@ -1,5 +1,20 @@
-.delete-btn{
 
-        background-color: #c80d0d;
-        color: #fff;
+footer{
+        display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 1.5px solid #ECF1F7;
+  padding-top: 20px;
 }
+
+footer button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        height: 40px;
+        border-radius: 15px;
+
+}
+

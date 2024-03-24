@@ -1,8 +1,8 @@
 import { TASK_ACTIONS } from "../const/taskActions"
 
-export const reducerTaskProvider = (tasks, action) => {
+export const reducerTaskProvider = (state, action) => {
     switch(action.type) {
-      case TASK_ACTIONS.CREATE_TASK:
+      case TASK_ACTIONS.CREATE_TASK:{
         if (action.payload === '') {
             return alert('Please, write a task')
         }
@@ -16,11 +16,18 @@ export const reducerTaskProvider = (tasks, action) => {
         tasksList.push(newTask);
         setTasks(tasksList);
         setText('')
-    }
+
+    return [...state, newTask]}
+
+    case TASK_ACTIONS.DELETE_TASK:{
+        return state.filter(task => task.id !== action.payload)
+      }
 
 
-return [...tasks, newTask]
+    default:
+        alert('Reducer Switch Error')
+        break
+}
+}
 
-
-  }
 

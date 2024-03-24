@@ -33,7 +33,7 @@ export function TodoContextProvider({ children }) {
 
 /*  const lastId = tasks.length > 0 ? tasks(tasks.length -1).id : 1;   */
 
- /*   const createTask = (title) => {
+ const createTask = (title) => {
         if (text === '') {
             return alert('Write a task')
         }
@@ -47,9 +47,9 @@ export function TodoContextProvider({ children }) {
         tasksList.push(newTask);
         setTasks(tasksList);
         setText('')
-    }   */
+    }
 
-    const createTask = (title) => {
+ /*    const createTask = (title) => {
 
         const action = {
            type: TASK_ACTIONS.CREATE_TASK,
@@ -58,10 +58,14 @@ export function TodoContextProvider({ children }) {
 
         dispatchTask(action)
     }
+ */
 
 
+   /*  function deleteTask(id) {
+        setTasks(tasks.filter(task => task.id !== id))
+    } */
 
-    function deleteTask(id) {
+     function deleteTask(id) {
         setTasks(tasks.filter(task => task.id !== id))
     }
 
